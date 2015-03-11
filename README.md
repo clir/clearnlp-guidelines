@@ -1,2 +1,3 @@
-# clearnlp-guidelines
-Guidelines of ClearNLP
+# ClearNLP
+
+* Installation guidelines.
