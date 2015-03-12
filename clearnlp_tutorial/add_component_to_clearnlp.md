@@ -41,23 +41,23 @@ There are **five** parts of the component that your have to setup/initialize to 
 
 	<!--Demo code: [clearnlp.component.mode.sequence.SeqEval](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/component/mode/sequence/SeqEval.java)-->
 
-4. Creat a component train configuration java file and finish implementing all abstract methods (ie. SeqTrainConfiguration extends AbstractTrainConfiguration)
+4. Create a component train configuration java file and finish implementing all abstract methods (ie. SeqTrainConfiguration extends AbstractTrainConfiguration)
 
 	1. Fill in paramenters that you wish to initialize in the xml file under init()
 	2. Update [clearnlp.nlp.NLPMode](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/nlp/NLPMode.java) for triain configuration component specification
 
 	<!--Demo code: [clearnlp.component.mode.sequence.SeqTrainConfiguration](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/component/mode/sequence/SeqTrainConfiguration.java)-->
 
-5. Creat a component feature extractor java file and finish implementing all abstract methods (ie. SeqFeatureExtractor enxtends CommonFeatureExtractor)
+5. Create a component feature extractor java file and finish implementing all abstract methods (ie. SeqFeatureExtractor enxtends CommonFeatureExtractor)
 
 	<!--Demo code: [clearnlp.component.mode.sequence.SeqFeatureExtractor](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/component/mode/sequence/SeqFeatureExtractor.java)-->
 
-6. Creat a component (abstract) classifier java files and finish implementing all abstract methods (ie. AbstractSeqClassifier & DefaultSeqClassifier)
+6. Create a component (abstract) classifier java files and finish implementing all abstract methods (ie. AbstractSeqClassifier & DefaultSeqClassifier)
 
 	<!--Demo code (AbstractSeqClassifier): [clearnlp.component.mode.sequence.AbstractSequenceClassifier](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/component/mode/sequence/AbstractSequenceClassifier.java)-->	
 	<!--Demo code (DefaultSeqClassifier): [clearnlp.component.mode.sequence.DefaultSequenceClassifier](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/component/mode/sequence/DefaultSequenceClassifier.java)-->
 
-7. Creat a component trainer java file and finish implementing all abstract methods (ie. SeqTrainer extends AbstractNLPTrainer)
+7. Create a component trainer java file and finish implementing all abstract methods (ie. SeqTrainer extends AbstractNLPTrainer)
 
 	1. Initialize constructors for each part of the component
 
