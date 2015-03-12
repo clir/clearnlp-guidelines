@@ -21,6 +21,13 @@ There are **five** parts of the component that your have to setup/initialize to 
 1. Create a package (Name of your component) under ... .clearnlp.component.mode
 
 2. Create a component state java file (ie. SeqState extends AbstractLRState/AbstractState)
-> State files has an OracelType(Ground truth input) and a LabelType(the way to produce label)
+
 	1. Overwite all abstract methods according the functionality of your component
 	2. You can pass in a dictionary to the constructor if needed
+	3. ***clearOravle: For clearing predefined information to avoid confusing data during feature extraction
+
+> State files has an OracelType(Ground truth input) and a LabelType(the way to produce label)
+
+> Extend AbstractLRState if you are doing equence classification from left to right (i.e. POSTagging/NameEntityRecognition) else extend AbstractState
+
+... in progress
