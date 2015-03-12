@@ -14,4 +14,13 @@ There are **five** parts of the component that your have to setup/initialize to 
 	3. BOOTSTRAP: Decode on train data to pick up error cases for model improvement
 	4. EVALUATE: Test componenet model on development data
 	5. DECODE: Decode
-	> These are declared enums for componenets ( ... .component.utils.CFlag)
+> These are declared enums for componenets ( ... .component.utils.CFlag)
+
+## Tutorial
+
+1. Create a package (Name of your component) under ... .clearnlp.component.mode
+
+2. Create a component state java file (ie. SeqState extends AbstractLRState/AbstractState)
+> State files has an OracelType(Ground truth input) and a LabelType(the way to produce label)
+	1. Overwite all abstract methods according the functionality of your component
+	2. You can pass in a dictionary to the constructor if needed
