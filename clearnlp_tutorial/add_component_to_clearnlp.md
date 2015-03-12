@@ -2,7 +2,7 @@
 
 ## Setup
 
-In order to add any additional componenet to ClearNLP, you will have to clone the entire clearnlp repo to your local machine.
+In order to add any additional component to ClearNLP, you will have to clone the entire clearnlp repo to your local machine.
 	
 	cd ~/TARGET_DIRECTORY_PATH/
 	git clone https://github.com/clir/clearnlp.git
@@ -32,7 +32,7 @@ There are **five** parts of the component that your have to setup/initialize to 
 	
 	<!--Demo Code: [clearnlp.component.mode.sequence.SeqState](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/component/mode/sequence/SeqState.java)-->
 
-3. Create a component evaluattion java file and finish implementing all abstract methods (ie. SeqEval enxtends AbstractEval)
+3. Create a component evaluattion java file and finish implementing all abstract methods (ie. SeqEval extends AbstractEval)
 
 	> 1. ***countCorrect: Counting the number of correct prediction compared to the ground truth
 	> 2. ***getScore[]: Return a score array if the evaluation contains multiple scores
@@ -48,7 +48,7 @@ There are **five** parts of the component that your have to setup/initialize to 
 
 	<!--Demo code: [clearnlp.component.mode.sequence.SeqTrainConfiguration](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/component/mode/sequence/SeqTrainConfiguration.java)-->
 
-5. Create a component feature extractor java file and finish implementing all abstract methods (ie. SeqFeatureExtractor enxtends CommonFeatureExtractor)
+5. Create a component feature extractor java file and finish implementing all abstract methods (ie. SeqFeatureExtractor extends CommonFeatureExtractor)
 
 	<!--Demo code: [clearnlp.component.mode.sequence.SeqFeatureExtractor](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/component/mode/sequence/SeqFeatureExtractor.java)-->
 
