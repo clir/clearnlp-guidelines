@@ -1,4 +1,4 @@
-# Add component to ClearNLP
+# Add Components to ClearNLP
 
 ## Setup
 
