@@ -48,7 +48,9 @@
         #SBATCH --ntasks=1
         #SBATCH --cpus-per-task=1
         #SBATCH --mem-per-cpu=2000
-
+    
+        ...
+    
         # Jar files to run
         export JAR=/home/$USERNAME/jar
         export CLEARNLP_COREF=$JAR/clearnlp-xx.jar
