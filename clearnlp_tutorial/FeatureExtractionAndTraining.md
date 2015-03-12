@@ -18,8 +18,8 @@ Features are stored as a xml file in the src/main/resource folder. The format is
 	
 	<feature template/>
 	 
-**f0** to **fn** represents n-grams   
-'**i**' represents the index of the word (EX: i-1 represents the previous word)  
+**f0** ... **fn** represents n-grams   
+'**i**' represents the index of the word (Example: i-1 represents the previous word)  
 '**:**' represents a mapping to a specfic word feature in the table below  
 If **visible="false"** the feature is not used
 
