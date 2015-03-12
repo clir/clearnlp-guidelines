@@ -3,7 +3,7 @@
 ## Set up ClearNLP on your ainos profile
 
     1. ssh ACCOUNT at ainos.mathcs.emory.edu
-    2. cp ~henryyhc/share/* .
+    2. cp -r ~henryyhc/share/* .
     3. cd scripts
     4. vim template.slurm
     5. Change the value of USERNAME to your account name
