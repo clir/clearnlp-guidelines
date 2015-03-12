@@ -1,4 +1,4 @@
-# Add component to ClearNLP
+# Add Components to ClearNLP
 
 ## Setup
 
@@ -70,4 +70,8 @@ There are **five** parts of the component that your have to setup/initialize to 
 ## Note
 This tutorial shows how to add components to ClearNLP by creating a sequence classifier component to ClearNLP. Due to the similiarity between sequence classifier and POS classifer, the tutorial above simply replicates [clearnlp.component.mode.pos](https://github.com/clir/clearnlp/tree/master/src/main/java/edu/emory/clir/clearnlp/component/mode/pos) and rewrites the exisiting component into a sequence classifier. 
 
+<<<<<<< HEAD
 If you were going to add a component that structurally different from any existing component in ClearNLP, you will have to create most of the abstract classes (ie. AbstractEval, AbstractState, etc). However you do have to make sure to implement the **five** parts of the ClearNLP component mentioned above.
+=======
+... in progress
+>>>>>>> d1f30cfc345129c9375f6b39b8c87511854f2b27
