@@ -49,5 +49,6 @@ Examples:
 | b | If first or last token | 	**\<feature f0="i:b1" note="input is the last token"/>** |
 | ft | Value of specific feature |  **\<feature f0="i:ft=f14"/>** |
 | orth | Orthographic features |  **\<feature f0="i:orth"/>**|
-
-
+| ds | Children/Dependent features |  **\<feature f0="i:ds"/>**|
+| ds2 | Grandchildren/Granddependent features |  **\<feature f0="i:ds2"/>**|
+| a | Ambigious |  **\<feature f0="i+1:a" f1="i+2:a"/>**|
