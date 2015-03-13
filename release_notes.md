@@ -1,4 +1,5 @@
 # ClearNLP Release Notes
+
 ### Version 2.0.2 (1/27/2014)
 * There was a bug related to the rule-based post-processing of dependency parsing for English. This is fixed now.
 
