@@ -29,17 +29,27 @@ If you wish to use the existing models in ClearNLP to decode, you will have to c
 	</configuration>
 	
 #### Configuration specifications
-1. `<language>...</language>`: Language of the input data
-2. `<model...></model>`: Import models that are needed for decode
-3. `<reader type="...">...</reader>`: Type of reader for reading inputs
+1. `<model>`: element specifies the [kind of model](../../getting_started/add_models.md) you want to run.
+2. `<language>`: element specifies the language of the models.
+	- `english` - English.
+3. `<reader>`: element contains information about the [data format](../data_format.md).
+	- The `type` attribute specifies the type of the data format: `raw|line|tsv`.
+		+ The `raw` type accepts texts in any format: `<reader type="raw">`.
+		+ The `line` type requires each sentence to be in one line: `<reader type="line">`.
+		+ The `tsv ` type requires each field to be in one column: `<reader type="tsv">`.
+	- When the `tsv ` type is used, `<tsv>` elements need to be specified.
+		+ The `index` attribute specifies the index of a field, starting at 1.
+		+ The `field` attribute specifies the name of the field:
+			* `id` - token ID, starting at 1
+			* `form` - word form
+			* `lemma` - lemma
+			* `pos` - part-of-speech tag
+			* `feats` - features
+			* `headId` - head token ID
+			* `deprel` - dependency label
+			* `sheads` - semantic heads
 
-	ClearNLP supports various data format for input (see [data format](../formats/data_format.md)), you will have to sepecify reader type `type="..."` for reading inputs. You will also have to sepcify the column indices if you have data that is separated based on attributes.
-
-	1. LineReader (`line`): For reading in document that has sentences separated in lines
-	2. RawReader (`raw`): For reading in document with untokenized sentences
-	3. TSVReader (`tsv`): For reading in document with attributes specified for each token
-
-4. `<MODE>...</MODE>`: Decoding mode
+4. `<MODE>`: Decoding mode
 
 	ClearNLP has various decoding modes already built-in: `pos|morph|dep|srl`. You will have to specify the mode that you wish to decode your document in inside the configuration file.
 	
