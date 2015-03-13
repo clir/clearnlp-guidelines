@@ -13,7 +13,6 @@ The ClearNLP project provides fast and robust NLP components implemented in Java
 * [Installation](getting_started/installation.md)
 * [Add model to ClearNLP](getting_started/add_models.md)
 * [Command-line tools](getting_started/command-line_tools.md)
-* [Use APIs with Maven and Eclipse](getting_started/using_apis)
 * [Demo project](demo/clearnlp_demo.md) 
 
 ####ClearNLP components
@@ -25,13 +24,16 @@ The ClearNLP project provides fast and robust NLP components implemented in Java
 * [Semantic role labeler](components/semantic_role_labeler.md)
 
 ####Model training
-* [Add components to ClearNLP](training/add_component_to_clearnlp.md)
 * [Feature Extraction] (training/FeatureExtraction.md)
 
 ####Formats
 * [Data format](formats/data_format.md)
 * [Headrule file format](formats/headrule_file_format.md)
 * [Configuration file format](formats/configuration_file_format.md)
+
+####API Documentations
+* [Use APIs with Maven and Eclipse](getting_started/using_apis)
+* [Add components to ClearNLP](training/add_component_to_clearnlp.md)
 
 ##Contact us
 You can contact us via the following email:
