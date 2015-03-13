@@ -14,8 +14,14 @@ support@clearnlp.com
 * [Demo project](demo/clearnlp_demo.md) 
 
 ####ClearNLP components
+* [Constituent to dependency converter](components/constituent_to_dependency_converter.md)
+* [Tokenizer and sentence segmenter](components/tokenizer_and_sentence_segmenter.md)
+* [Part-of-speech tagger](components/pos_tagger.md)
+* [Morphological analyzer](components/morphological_analyzer.md)
+* [Dependency parser](components/dependency_parser.md)
+* [Semantic role labeler](components/semantic_role_labeler.md)
 
-####
+####Model training
 * [Add components to ClearNLP](clearnlp_tutorial/add_component_to_clearnlp.md)
 * [Feature Extraction] (clearnlp_tutorial/FeatureExtraction.md)
 
