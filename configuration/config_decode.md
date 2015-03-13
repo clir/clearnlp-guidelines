@@ -1,6 +1,6 @@
 # Decode Configuration Format
 
-If you wish to use the existing models in ClearNLP to decode, you will have to create a configuration xml file and pass it in to ClearNLP for decode.
+If you wish to use the existing models in ClearNLP to decode, you will have to create a configuration xml file and pass it into ClearNLP for decode.
 
 #### Sample decode configuration xml file
 	<configuration>
