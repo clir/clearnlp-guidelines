@@ -48,4 +48,4 @@ If you wish to use the existing models in ClearNLP to decode, you will have to c
 	3. Dependency parsing (`dep`)
 	4. Semantic role labeling (`srl`)
 
-	> You could add additional mode to ClearNLP if you wish (See [add components to ClearNLP](../api/add_components_to_clearnlp.md))
+	> You could add additional mode to ClearNLP if you wish (See [add components to ClearNLP](../api/add_component_to_clearnlp.md))
