@@ -1,14 +1,25 @@
 # How to add models
 ## Genreal domain
-The general models are trained on various corpora, mostly from the [OntoNotes 5.0](https://catalog.ldc.upenn.edu/docs/LDC2013T19/OntoNotes-Release-5.0.pdf) and more. The followings show the distribution of each genre in our training data.
+The general models are trained on various corpora, mostly from [Google Web Treebank](https://catalog.ldc.upenn.edu/LDC2012T13), [OntoNotes 5.0](https://catalog.ldc.upenn.edu/LDC2013T19), and more. The followings show the distribution of each genre in our training data.
 
-* Broadcasting conversations: 10,826 sentences, 171,120 tokens
-* Broadcasting news: 10,349 sentences, 206,057 tokens
-* News magazines: 6,672 sentences, 163,627 tokens
-* Newswires: 34,492 sentences, 876,399 tokens
-* Religious texts: 21,419 sentences, 296,437 tokens
-* Telephone conversations: 8,969 sentences, 85,463 tokens
-* Web-texts: 12,452 sentences, 284,975 tokens
+| Google Web Treebank | Sentence Counts | Token Counts |
+| ------------------- | --------------- | ------------ |
+| google_answers      | 2,699           | 43,916       |
+| google_email        | 2,983           | 44,168       |
+| google_newsgroup    | 1,995           | 37,714       |
+| google_question     | 3,199           | 29,715       |
+| google_reviews      | 2,915           | 44,337       |
+| google_weblog       | 1,753           | 38,770       |
+
+| OntoNotes                  | Sentence Counts | Token Counts |
+| -------------------------- | --------------- | ------------ |
+| Broadcasting conversations | 10,822          | 171,101      |
+| Broadcasting news          | 10,822          | 206,020      |
+| News magazines             | 6,672           | 163,627      |
+| Newswires                  | 34,434          | 875,738      |
+| Religious                  | 21,418          | 296,432      |
+| Telephone conversations    | 8,963           | 85,444       |
+| Web-texts                  | 12,447          | 284,948      |
 
 #### Without Maven
 1. Download the following models for the tasks you want to process.
@@ -53,7 +64,9 @@ All models can be retrieved from [Maven Central](http://search.maven.org/#search
 		</dependencies>
 		
 ## Medical domain
-The medical models are trained on various corpora, collected by the MiPACQ, SHARP, and THYME projects. The followings show the distribution of each genre in our training data.
+Coming soon...
+
+<!--The medical models are trained on various corpora, collected by the MiPACQ, SHARP, and THYME projects. The followings show the distribution of each genre in our training data.
 
 * MiPACQ: Clinical questions: 1,600 sentences, 30,138 tokens
 * MiPACQ: Medpedia articles: 2,796 sentences, 49,922 tokens
@@ -107,6 +120,4 @@ All models can be retrieved from [Maven Central](http://search.maven.org/#search
 		    	<version>1.0</version>
 		  	</dependency>
 		...
-		</dependencies>
-		
-		
+		</dependencies>-->
