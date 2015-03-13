@@ -32,8 +32,8 @@ The ClearNLP project provides fast and robust NLP components implemented in Java
 * [Configuration file format](formats/configuration_file_format.md)
 
 ####API Documentations
-* [Use APIs with Maven and Eclipse](getting_started/using_apis)
-* [Add components to ClearNLP](training/add_component_to_clearnlp.md)
+* [Use APIs with Maven and Eclipse](api/using_apis.md)
+* [Add components to ClearNLP](api/add_component_to_clearnlp.md)
 
 ##Contact us
 You can contact us via the following email:
