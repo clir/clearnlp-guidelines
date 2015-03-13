@@ -25,6 +25,7 @@ The ClearNLP project provides fast and robust NLP components implemented in Java
 
 ####Model training
 * [Feature Extraction] (training/FeatureExtraction.md)
+* [Training] (training/Training.md)
 
 ####Formats
 * [Data format](formats/data_format.md)
