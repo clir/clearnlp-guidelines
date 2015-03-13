@@ -1,7 +1,8 @@
 #The ClearNLP Project
 
-The ClearNLP project provides fast and robust NLP components implemented in Java. The project is currently developed at Emory University. All ClearNLP components are hosted at Github as open source projects. Please join the ClearNLP group if you wish to get notifications about new updates or post issues, suggestions, questions, etc. You can also contact directly to the owner using the following email:
-support@clearnlp.com
+The ClearNLP project provides fast and robust NLP components implemented in Java. The project is currently developed at Emory University. All ClearNLP components are hosted at Github as open source projects. Please join the ClearNLP group if you wish to get notifications about new updates or post issues, suggestions, questions, etc.
+
+##### Current Verison: [2.0.2](https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&g=com.clearnlp&a=clearnlp&v=2.0.2&e=jar) ([Release notes](release_notes.md))
 
 ##News
 - [01/27/2013] Version 2.0.2 is released with a bugfix for dependency parsing.
