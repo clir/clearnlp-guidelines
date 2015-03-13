@@ -12,6 +12,8 @@ The ClearNLP project provides fast and robust NLP components implemented in Java
 ####Getting Started
 * [Installation](getting_started/installation.md)
 * [Add model to ClearNLP](getting_started/add_models.md)
+* [Command-line tools](getting_started/command-line_tools.md)
+* [Use APIs with Maven and Eclipse](getting_started/using_apis)
 * [Demo project](demo/clearnlp_demo.md) 
 
 ####ClearNLP components
