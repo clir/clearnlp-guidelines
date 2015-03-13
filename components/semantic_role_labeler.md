@@ -35,6 +35,7 @@ A dictionary, a part-of-speech tagging model, a dependency parsing model, and a 
 * The output file extension (`-oe`) gets appended to input filenames, and used to generate corresponding output files.
 
 The following command takes an input file ([iphone5.txt](https://github.com/clearnlp/clearnlp-demo/blob/master/src/main/resources/sample/iphone5.txt)) and generates an output file ([iphone5.txt.srl](https://github.com/clearnlp/clearnlp-demo/blob/master/src/main/resources/sample/iphone5.txt.srl)) in the srl format. Please make sure to use the [-XX:+UseConcMarkSweepGC](http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html) option for JVM, which reduces the memory usage into a half.
+aa
 
 	java -XX:+UseConcMarkSweepGC -Xmx1g com.clearnlp.nlp.engine.NLPDecode -z srl -c config_en_srl.xml -i iphone5.txt -oe srl
 	
