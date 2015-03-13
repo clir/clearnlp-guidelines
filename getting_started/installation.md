@@ -6,12 +6,13 @@
 3. Add all jar files in the clearnlp directory to your Java classpath. If you are using the bash shell, it is something like the followings:
 		
 		export CLEARNLP=some_path/clearnlp
-		export CLASSPATH=$CLEARNLP/args4j-2.0.23.jar:\\
-                 $CLEARNLP/guava-14.0.1.jar:\\
-                 $CLEARNLP/hppc-0.5.2.jar:\\
-                 $CLEARNLP/jregex1.2_01.jar:\\
+		export CLASSPATH=$CLEARNLP/args4j-2.0.29.jar:\\
+                 $CLEARNLP/guava-18.0.jar:\\
+                 $CLEARNLP/hppc-0.6.1.jar:\\
+                 $CLEARNLP/xz-1.5.jar
                  $CLEARNLP/log4j-1.2.17.jar:\\
-                 $CLEARNLP/clearnlp-2.0.2.jar:.
+                 $CLEARNLP/clearnlp-3.0.0.jar:.
+                 
 4. Create the log4j configuration file named `log4j.properties` with the following lines under the ClearNLP directory
 		
 		# Set root logger level to DEBUG and its only appender to A1.
@@ -26,7 +27,7 @@
 
 5. Type the following command on a terminal
 
-		$ java com.clearnlp.run.Version
+		$ java edu.emory.clir.clearnlp.Version
 		
 6. If you see the information below, ClearNLP is successfully installed on your machine
 
@@ -35,44 +36,13 @@
 		Owner  : Jinho D. Choi
 		Contact: support@clearnlp.com
 		
-#### With Maven (for version 2.x)
-* ClearNLP can be retrieved from the [Maven Central](http://search.maven.org/#artifactdetails%7Ccom.clearnlp%7Cclearnlp%7C2.0.2%7Cjar). Add the following lines to your 'pom.xml' with the group ID 'com.clearnlp', the artifact ID 'clearnlp', and the current version number.
-
-		<dependencies>
-		...
-			<dependency>
-	    		<groupId>com.clearnlp</groupId>
-    			<artifactId>clearnlp</artifactId>
-    			<version>2.0.2</version>
-  			</dependency>
-		...
-		</dependencies>
-		
-* Create the log4j configuration file named `log4j.properties` with the following lines under the ClearNLP directory
-		
-		# Set root logger level to DEBUG and its only appender to A1.
-		log4j.rootLogger=DEBUG, A1
-
-		# A1 is set to be a ConsoleAppender.
-		log4j.appender.A1=org.apache.log4j.ConsoleAppender
-
-		# A1 uses PatternLayout.
-		log4j.appender.A1.layout=org.apache.log4j.PatternLayout
-		log4j.appender.A1.layout.conversionPattern=%m
-
 #### With Maven (for version 3.x)
 * ClearNLP can be retrieved from the [Maven Central](http://search.maven.org/#artifactdetails%7Ccom.clearnlp%7Cclearnlp%7C2.0.2%7Cjar). Add the following lines to your 'pom.xml' with the group ID 'com.clearnlp', the artifact ID 'clearnlp', and the current version number.
-
-		<parent>
-		  	<groupId>org.sonatype.oss</groupId>
-		  	<artifactId>oss-parent</artifactId>
-		  	<version>7</version>
-		</parent>
 
 		<dependency>
 		  	<groupId>edu.emory.clir</groupId>
 		 	<artifactId>clearnlp</artifactId>
-		  	<version>3.0.0-SNAPSHOT</version>
+		  	<version>3.0.0-</version>
 		</dependency>
 		
 * Create the log4j configuration file named `log4j.properties` with the following lines under the ClearNLP directory
