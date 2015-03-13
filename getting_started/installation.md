@@ -35,7 +35,7 @@
 		Owner  : Jinho D. Choi
 		Contact: support@clearnlp.com
 		
-#### With Maven
+#### With Maven (for version 2.x)
 * ClearNLP can be retrieved from the [Maven Central](http://search.maven.org/#artifactdetails%7Ccom.clearnlp%7Cclearnlp%7C2.0.2%7Cjar). Add the following lines to your 'pom.xml' with the group ID 'com.clearnlp', the artifact ID 'clearnlp', and the current version number.
 
 		<dependencies>
@@ -47,6 +47,33 @@
   			</dependency>
 		...
 		</dependencies>
+		
+* Create the log4j configuration file named `log4j.properties` with the following lines under the ClearNLP directory
+		
+		# Set root logger level to DEBUG and its only appender to A1.
+		log4j.rootLogger=DEBUG, A1
+
+		# A1 is set to be a ConsoleAppender.
+		log4j.appender.A1=org.apache.log4j.ConsoleAppender
+
+		# A1 uses PatternLayout.
+		log4j.appender.A1.layout=org.apache.log4j.PatternLayout
+		log4j.appender.A1.layout.conversionPattern=%m
+
+#### With Maven (for version 3.x)
+* ClearNLP can be retrieved from the [Maven Central](http://search.maven.org/#artifactdetails%7Ccom.clearnlp%7Cclearnlp%7C2.0.2%7Cjar). Add the following lines to your 'pom.xml' with the group ID 'com.clearnlp', the artifact ID 'clearnlp', and the current version number.
+
+		<parent>
+		  	<groupId>org.sonatype.oss</groupId>
+		  	<artifactId>oss-parent</artifactId>
+		  	<version>7</version>
+		</parent>
+
+		<dependency>
+		  	<groupId>edu.emory.clir</groupId>
+		 	<artifactId>clearnlp</artifactId>
+		  	<version>3.0.0-SNAPSHOT</version>
+		</dependency>
 		
 * Create the log4j configuration file named `log4j.properties` with the following lines under the ClearNLP directory
 		
