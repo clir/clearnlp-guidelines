@@ -33,4 +33,9 @@ he following command takes an input file ([iphone5.txt](https://github.com/clear
 	java -XX:+UseConcMarkSweepGC -Xmx1g com.clearnlp.nlp.engine.NLPDecode -z pos -c config_en_pos.xml -i iphone5.txt -oe pos
 	
 ### Training
-The training module is indeed implemented; however, optimization can be tricky. If you want to train new models, please contact the owner of ClearNLP: [support@clearnlp.com](mailto:support@clearnlp.com).
+Here are some guidelines for training ClearNLP components:
+
+* [Add components to ClearNLP](../training/add_component_to_clearnlp.md)
+* [Feature Extraction] (../training/FeatureExtraction.md)
+
+If you are experience any problem, please feel free to contatct the owner of ClearNLP: [support@clearnlp.com](mailto:support@clearnlp.com)

@@ -23,8 +23,8 @@ The ClearNLP project provides fast and robust NLP components implemented in Java
 * [Semantic role labeler](components/semantic_role_labeler.md)
 
 ####Model training
-* [Add components to ClearNLP](clearnlp_tutorial/add_component_to_clearnlp.md)
-* [Feature Extraction] (clearnlp_tutorial/FeatureExtraction.md)
+* [Add components to ClearNLP](training/add_component_to_clearnlp.md)
+* [Feature Extraction] (training/FeatureExtraction.md)
 
 ##Contact us
 You can contact us via the following email:

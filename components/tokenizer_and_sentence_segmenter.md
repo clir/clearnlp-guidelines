@@ -36,3 +36,11 @@ A dictionary must be added before running the tokenizer. See the [how to add mod
 The following command takes a sample input file ([iphone5.txt](https://github.com/clearnlp/clearnlp-demo/blob/master/src/main/resources/sample/iphone5.txt)) and generates an output file ([iphone5.txt.tok](https://github.com/clearnlp/clearnlp-demo/blob/master/src/main/resources/sample/iphone5.txt.tok)) in the [line format](../formats/data_format.md).
 
 	java com.clearnlp.run.Tokenizer -i iphone5.txt
+	
+### Training
+Here are some guidelines for training ClearNLP components:
+
+* [Add components to ClearNLP](../training/add_component_to_clearnlp.md)
+* [Feature Extraction] (../training/FeatureExtraction.md)
+
+If you are experience any problem, please feel free to contatct the owner of ClearNLP: [support@clearnlp.com](mailto:support@clearnlp.com)
