@@ -23,7 +23,7 @@ A dictionary must be added before running the converter. See the "[how to add mo
 	-l  <language> : language (default: en)
 	-m  <string>   : merge labels (default: null)
 
-* A headrule file (-h) can be found here: [headrule\_en\_stanford.txt](http://clearnlp.googlecode.com/git/src/main/resources/headrule/headrule_en_stanford.txt). See the [headrule file format](formats/headrule_file_format.md) page for more details about this file.
+* A headrule file (-h) can be found here: [headrule\_en\_stanford.txt](http://clearnlp.googlecode.com/git/src/main/resources/headrule/headrule_en_stanford.txt). See the [headrule file format](../formats/headrule_file_format.md) page for more details about this file.
 * The input path (`-i`) can point to either a file or a directory. When the input path points to a file, only the specific file is processed. When the input path points to a directory, all files with the input file extension (`-ie`) under the specific directory are processed.
 * The input file extension (`-ie`) can be either a string or a [regular expression](http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html) specifying the extension of the input files. The default value (`.*`) implies files with any extension. This option is used only when the input path (`-i`) points to a directory.
 * The output file extension (`-oe`) gets appended to input filenames, and used to generate corresponding output files.
@@ -78,7 +78,7 @@ A sample input file can be found here: [wsj\_0001.parse](https://github.com/clea
 				(. .)))
 				
 ### Output file
-A sample output file can be found here: [wsj\_0001.parse.dep](https://github.com/clearnlp/clearnlp/blob/master/src/main/resources/sample/wsj_0001.parse.dep). Each field is delimited by a tab character and each tree is delimited by a blank line. See the [data format](formats/data_format.md) page for more details about the format of the converted dependency trees.
+A sample output file can be found here: [wsj\_0001.parse.dep](https://github.com/clearnlp/clearnlp/blob/master/src/main/resources/sample/wsj_0001.parse.dep). Each field is delimited by a tab character and each tree is delimited by a blank line. See the [data format](../formats/data_format.md) page for more details about the format of the converted dependency trees.
 
 	1       Pierre  pierre  NNP     _       2       nn      _
 	2       Vinken  vinken  NNP     _       9       nsubj   _
