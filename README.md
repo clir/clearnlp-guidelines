@@ -26,6 +26,11 @@ The ClearNLP project provides fast and robust NLP components implemented in Java
 * [Add components to ClearNLP](training/add_component_to_clearnlp.md)
 * [Feature Extraction] (training/FeatureExtraction.md)
 
+####Formats
+* [Data format](formats/data_format.md)
+* [Headrule file format](formats/headrule_file_format.md)
+* [Configuration file format](formats/configuration_file_format.md)
+
 ##Contact us
 You can contact us via the following email:
 	[support@clearnlp.com](mailto:support@clearnlp.com)
