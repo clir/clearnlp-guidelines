@@ -33,6 +33,9 @@ The ClearNLP project provides fast and robust NLP components implemented in Java
 * [Train configuration file format](formats/configuration/config_train.md)
 * [Decode configuration file format](formats/configuration/config_decode.md)
 
+####Labels
+* [Arguments](labels/arguments.md)
+
 ####API Documentations
 * [Use APIs with Maven and Eclipse](api/using_apis.md)
 * [Add components to ClearNLP](api/add_component_to_clearnlp.md)
