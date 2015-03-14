@@ -1,58 +1,39 @@
-# ClearNLP Installation
-##How to install
-#### Without Maven
-1. Create a directory called 'clearnlp'
-2. Download the [ClearNLP library](http://clearnlp.wikispaces.com/file/detail/clearnlp-lib-2.0.2.tgz) and uncompress it. Place all jar files under the clearnlp directory
-3. Add all jar files in the clearnlp directory to your Java classpath. If you are using the bash shell, it is something like the followings:
+# Installation
+
+## Without Maven
+
+* Create a directory called `clearnlp`.
+* Download the following jar files and place them under the `clearnlp` directory:<br>[`clearnlp`](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp/3.0.0/clearnlp-3.0.0.jar), [`args4j`](http://search.maven.org/remotecontent?filepath=args4j/args4j/2.0.29/args4j-2.0.29.jar), [`log4j`](http://search.maven.org/remotecontent?filepath=log4j/log4j/1.2.17/log4j-1.2.17.jar), [`hppc`](http://search.maven.org/remotecontent?filepath=com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar), [`xz`](http://search.maven.org/remotecontent?filepath=org/tukaani/xz/1.5/xz-1.5.jar).
+* Add all jar files in the `clearnlp` directory to your Java classpath. If you are using the bash shell, it is something like the followings:
 		
-		export CLEARNLP=some_path/clearnlp
-		export CLASSPATH=$CLEARNLP/args4j-2.0.29.jar:\\
-                 $CLEARNLP/guava-18.0.jar:\\
-                 $CLEARNLP/hppc-0.6.1.jar:\\
-                 $CLEARNLP/xz-1.5.jar
-                 $CLEARNLP/log4j-1.2.17.jar:\\
-                 $CLEARNLP/clearnlp-3.0.0.jar:.
-                 
-4. Create the log4j configuration file named `log4j.properties` with the following lines under the ClearNLP directory
-		
-		# Set root logger level to DEBUG and its only appender to A1.
-		log4j.rootLogger=DEBUG, A1
+		CLEARNLP=some_path/clearnlp
+		export CLASSPATH=$CLEARNLP/clearnlp-3.0.0.jar:\\
+		                 $CLEARNLP/args4j-2.0.29.jar:\\
+		                 $CLEARNLP/log4j-1.2.17.jar:\\
+		                 $CLEARNLP/hppc-0.6.1.jar:\\
+		                 $CLEARNLP/xz-1.5.jar:.
+                 	
+## With Maven
 
-		# A1 is set to be a ConsoleAppender.
-		log4j.appender.A1=org.apache.log4j.ConsoleAppender
-
-		# A1 uses PatternLayout.
-		log4j.appender.A1.layout=org.apache.log4j.PatternLayout
-		log4j.appender.A1.layout.conversionPattern=%m
-
-5. Type the following command on a terminal
-
-		$ java edu.emory.clir.clearnlp.Version
-		
-6. If you see the information below, ClearNLP is successfully installed on your machine
-
-		ClearNLP version x.x.x
-		Webpage: clearnlp.com
-		Owner  : Jinho D. Choi
-		Contact: support@clearnlp.com
-		
-#### With Maven (for version 3.x)
-* ClearNLP can be retrieved from the [Maven Central](http://search.maven.org/#artifactdetails%7Ccom.clearnlp%7Cclearnlp%7C2.0.2%7Cjar). Add the following lines to your 'pom.xml' with the group ID 'com.clearnlp', the artifact ID 'clearnlp', and the current version number.
+* ClearNLP can be retrieved from the [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22edu.emory.clir.clearnlp%22). Add the following lines to your `pom.xml` with the group ID `edu.emory.clir`, the artifact ID `clearnlp`, and the current version number.
 
 		<dependency>
 		  	<groupId>edu.emory.clir</groupId>
 		 	<artifactId>clearnlp</artifactId>
-		  	<version>3.0.0-</version>
+		  	<version>3.0.0</version>
 		</dependency>
-		
-* Create the log4j configuration file named `log4j.properties` with the following lines under the ClearNLP directory
-		
-		# Set root logger level to DEBUG and its only appender to A1.
-		log4j.rootLogger=DEBUG, A1
 
-		# A1 is set to be a ConsoleAppender.
-		log4j.appender.A1=org.apache.log4j.ConsoleAppender
+## Test
 
-		# A1 uses PatternLayout.
-		log4j.appender.A1.layout=org.apache.log4j.PatternLayout
-		log4j.appender.A1.layout.conversionPattern=%m
+* Type the following command on a terminal.
+
+		$ java edu.emory.clir.clearnlp.bin.Version
+		
+* If you see the information below, ClearNLP is successfully installed on your machine.
+
+		ClearNLP Version 3.0.0
+		Webpage: http://www.clearnlp.com
+		Owner  : Jinho D. Choi
+		Contact: support@clearnlp.com
+
+* Download the [log4j configuration file](https://raw.githubusercontent.com/clir/clearnlp/master/src/main/resources/configure/log4j.properties) and place it under the `clearnlp` directory.  This file is needed to print logs during training and decoding.

@@ -1,18 +1,19 @@
 # Constituent-to-Dependency Converter
-Our constituent-to-dependency converter takes the [Penn Treebank](http://www.cis.upenn.edu/~treebank/) style constituent trees as input and generates the CLEAR style dependency trees as output. Here are some of the key features of the CLEAR dependency conversion.
+Our constituent-to-dependency converter takes the [Penn Treebank](http://www.cis.upenn.edu/~treebank/) style constituent trees as input and generates the CLIR style dependency trees as output. Here are some of the key features of our dependency conversion.
 
-* Generates the [Stanford dependency](http://nlp.stanford.edu/software/stanford-dependencies.shtml) labels.
+* Generates rich dependency labels similar to the [Stanford dependency](http://nlp.stanford.edu/software/stanford-dependencies.shtml) labels.
 * Allows users to customize their own head-finding rules.
 * Produces long-distance dependencies by remapping empty categories in constituent trees.
 * Produces secondary dependencies caused by several linguistic phenomena.
 * Preserves function tags as features of individual dependency nodes.
 
-The CLEAR dependency conversion has been tested on various Treebanks and shown robust results across different corpora. See the technical report for more details about this conversion.
+The CLEAR dependency conversion has been tested on various Treebanks and shown robust results across different corpora. See the following documents for more details.
 
-* [Guidelines for the Clear Style Constituent to Dependency Conversion](https://dl.dropbox.com/u/15060914/publications/ics-12.pdf), Jinho D. Choi, Martha Palmer, Technical report 01-12: Institute of Cognitive Science, University of Colorado Boulder, 2012.
+* [Guidelines for the CLEAR Style Constituent to Dependency Conversion](https://dl.dropbox.com/u/15060914/publications/ics-12.pdf), Jinho D. Choi, Martha Palmer, Technical report 01-12: Institute of Cognitive Science, University of Colorado Boulder, 2012.
+* [Latest guidelines](../dependency/dependency_guidelines.md) (updated dynamically).
 
 ## How to Run
-A dictionary must be added before running the converter. See the "[how to add models](getting_started/add_models.md)" page for instructions of how to add our dictionary to your system.
+The dictionary must be added before running the converter. See the "[how to add models](../getting_started/models.md)" page for the instructions of adding our dictionary to your system.
 
 	java com.clearnlp.run.C2DConvert -h <filename> -i <filepath> [-ie <regex> -oe <string> -l <language> -m <string>]
 	 

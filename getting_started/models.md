@@ -1,32 +1,44 @@
-# How to add models
-## Genreal domain
-The general models are trained on various corpora, mostly from [Google Web Treebank](https://catalog.ldc.upenn.edu/LDC2012T13), [OntoNotes 5.0](https://catalog.ldc.upenn.edu/LDC2013T19), and more. The followings show the distribution of each genre in our training data.
+# Models
 
-| Google Web Treebank | Sentence Counts | Token Counts |
-| ------------------- | --------------- | ------------ |
-| google_answers      | 2,699           | 43,916       |
-| google_email        | 2,983           | 44,168       |
-| google_newsgroup    | 1,995           | 37,714       |
-| google_question     | 3,199           | 29,715       |
-| google_reviews      | 2,915           | 44,337       |
-| google_weblog       | 1,753           | 38,770       |
+## Contents
 
-| OntoNotes                  | Sentence Counts | Token Counts |
-| -------------------------- | --------------- | ------------ |
+* [General domain](#general-domain).
+* [Medical domain](#medical-domain).
+* [Bioinformations domain](#bioinformations-domain).
+
+## Genreal Domain
+
+The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/LDC2013T19), [English Web Treebank](https://catalog.ldc.upenn.edu/LDC2012T13), and [QuestionBank](http://www.computing.dcu.ie/~jjudge/qtreebank/). The followings show the distribution of each genre in our training data.
+
+| OntoNotes 5.0              | Sentence Counts | Token Counts |
+| -------------------------- | --------------: | -----------: |
 | Broadcasting conversations | 10,822          | 171,101      |
 | Broadcasting news          | 10,822          | 206,020      |
 | News magazines             | 6,672           | 163,627      |
 | Newswires                  | 34,434          | 875,738      |
-| Religious                  | 21,418          | 296,432      |
+| Religious texts            | 21,418          | 296,432      |
 | Telephone conversations    | 8,963           | 85,444       |
-| Web-texts                  | 12,447          | 284,948      |
+| Web texts                  | 12,447          | 284,948      |
 
-#### Without Maven
+| Engilsh Web Treebank | Sentence Counts | Token Counts |
+| -------------------- | --------------: | -----------: |
+| Answers              | 2,699           | 43,916       |
+| Email                | 2,983           | 44,168       |
+| Newsgroup            | 1,995           | 37,714       |
+| Reviews              | 2,915           | 44,337       |
+| Weblog               | 1,753           | 38,770       |
+
+| QuestionBank | Sentence Counts | Token Counts |
+| ------------ | --------------: | -----------: |
+| Questions    | 3,199           | 29,715       |
+
+
+### Without Maven
+
 1. Download the following models for the tasks you want to process.
-	- Dictionary: [clearnlp-dictionary-1.0.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-dictionary/1.0/clearnlp-dictionary-1.0.jar) (required)
-	- Part-of-speech tagging: [clearnlp-general-en-pos-1.1.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-general-en-pos/1.1/clearnlp-general-en-pos-1.1.jar)
-	- Dependency parsing: [clearnlp-general-en-dep-1.2.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-general-en-dep/1.2/clearnlp-general-en-dep-1.2.jar)
-	- Semantic role labeling: [clearnlp-general-en-srl-1.1.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-general-en-srl/1.1/clearnlp-general-en-srl-1.1.jar)
+ * Dictionary: [clearnlp-dictionary-1.0.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-dictionary/1.0/clearnlp-dictionary-1.0.jar) (required)
+ * Part-of-speech tagging: [clearnlp-general-en-pos-1.1.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-general-en-pos/1.1/clearnlp-general-en-pos-1.1.jar)
+ * Dependency parsing: [clearnlp-general-en-dep-1.2.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-general-en-dep/1.2/clearnlp-general-en-dep-1.2.jar)
 
 2. Add all jar files to your Java classpath. If you are using the bash shell, it is something like the followings:
 		
@@ -35,8 +47,9 @@ The general models are trained on various corpora, mostly from [Google Web Treeb
                  		 clearnlp-general-en-dep-x.X.jar:\\
                  		 clearnlp-general-en-srl-x.x.jar:more_jar_files...
                  		 
-#### With Maven
-All models can be retrieved from [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cclearnlp-general-en). Add the following lines to your 'pom.xml'.
+### With Maven
+
+Add the following lines to your 'pom.xml'.
 
 		<dependencies>
   		...
@@ -63,7 +76,11 @@ All models can be retrieved from [Maven Central](http://search.maven.org/#search
 		...
 		</dependencies>
 		
-## Medical domain
+## Medical Domain
+
+
+## Bioinformatics Domain
+
 Coming soon...
 
 <!--The medical models are trained on various corpora, collected by the MiPACQ, SHARP, and THYME projects. The followings show the distribution of each genre in our training data.
