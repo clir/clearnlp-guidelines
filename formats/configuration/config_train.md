@@ -52,5 +52,12 @@ If you wish to train your model in ClearNLP and/or export the model you build, y
 
 3. `<MODE>...</MODE>`: Training mode
 	1. `<trainer>...</trainer>`:
-	2. `<bootstraps>...</bootstraps>`:
-	3. `<ATTRIBUTES>...</ATTRIBUTES>`
+		* `algorithm=""`: `adagrad` for Adagrad algorithm, `liblinear`for liblinear algorithm
+		* `type=""`: `svm` for support vector machine, `lr` for linear regression
+		* `labelCutoff="N"`: Cutoff count threshold for labels appears less than N times
+		* `featureCutoff="N"`: Cutoff count threshold for features appears less than N times
+		* `alpha="N"`: learning rate N
+		* `rho`: smoothing denominator N
+		* `average ="T|F"`: boolean for averaging hyperplanes
+	2. `<bootstraps>T|F</bootstraps>`: boolean for enabling bootstrap for trainer
+	3. `<ATTRIBUTES>...</ATTRIBUTES>`: Additional attributes specified for associating modes
