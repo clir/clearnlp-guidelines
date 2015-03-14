@@ -21,7 +21,7 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 ## Training
 
 * [Feature Extraction] (md/training/FeatureExtraction.md)
-* [Training] (training/Training.md)
+* [Training] (md/training/training_guidelines.md)
 
 ## Formats
 
