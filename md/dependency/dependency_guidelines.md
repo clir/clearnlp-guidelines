@@ -3,7 +3,7 @@
 
 | Label  | Description  | Example |
 |:------------- |:---------------:| :-------------|
-| ACOMP     | Adjectival complement | Adjective phrase that modifies the head of a VP \| SINV \| SQ, that is usually a verb. Example: "She looks so beautiful" `so beautiful` is the ACOMP of `looks`  |
+| ACOMP     | Adjectival complement | Adjective phrase that modifies the head of a `VP` \| `SINV` \| `SQ`, that is usually a verb. Example: "She looks so beautiful" `so beautiful` is the ACOMP of `looks`  |
 | ADVCL      | Adverbial clause modifier| Acts like an adverbial modifier (ADVMOD) A subordinate clause or open clause is considered an ADVCL if it doesn't satisfy an other dependency relation. Example: "She came to see me" `to see me` is the ADVCL of `came`|
 | ADVMOD | Adverbial modifier | Adverb of adverb phrase that modifies the meaning of another word. Other grammatical categories can also be ADVMOD if they modify adjectives. Example: "I did not know her" `not` is a ADVMOD of `know`  |
 | AGENT | AGENT |  Complement of a passive verb that is the surface subject of its active form. Example: "The car was bought by John." `by John` is the agent that is a complement of `bought` (The prep `by` is included as part of AGENT)  |
