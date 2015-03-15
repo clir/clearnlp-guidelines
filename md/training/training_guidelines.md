@@ -7,7 +7,7 @@ To train fill in the following variables and run:
 `-t $TRN `:  Training data (Required full path to train files. Use `-te` to specify training file extension)  
 `-d $DEV` :  Development data (Required full path to the development files. Use `-de` to specify dev file extension)  
 `-c $CONFIG` : Training configuration file (required)  
-`-f $FEATURE` : Feature XML files (required)  [Feature Extraction] (md/training/FeatureExtraction.md)
+`-f $FEATURE` : Feature XML files (required)  
 `-m $MODEL` : Model path (optional)  
 `-threads` : Number of threads to use (default = 1) 
 
