@@ -29,6 +29,8 @@ Features are stored as a xml file in the src/main/resource folder. The following
 | lns | Left nearest sibling |Considers the left nearest sibling of the current node in the dependency tree if exist (The # coming after lns represents the order) Example: `lns2` is the second left nearest sibling |
 | rmd | Right most child |Considers the right most child of the current node in the dependency tree if exist (The # coming after lns represents the order) Example: `rmd3` is the third right most child |
 | rns | Right nearest sibling|Considers the right nearest sibling of the current node in the dependency tree if exist (The # coming after lns represents the order) Example: `rns4` is the fourth right nearest sibling|
+| sc | Subcategorization |
+
 
 
 ##Feature Template 
@@ -101,6 +103,8 @@ Other Examples:
 | lns | Left nearest sibling | `<feature f0="i_lns"/>`|
 | rmd | Right most child | `<feature f0="i_rmd"/>`|
 | rns | Right nearest sibling| `<feature f0="i_rns2"/>`|
+| sc | Subcategorization |
+
  
 
 
