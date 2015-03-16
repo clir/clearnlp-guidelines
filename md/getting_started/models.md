@@ -77,7 +77,29 @@ Add the following lines to your 'pom.xml'.
 		</dependencies>
 		
 ## Medical Domain
+The medical models are trained on various corpora, collected by the [MiPACQ](http://clear.colorado.edu/compsem/index.php?page=endendsystems&sub=mipacq), [SHARP](http://informatics.mayo.edu/sharp/index.php/Main_Page), and [THYME](http://clear.colorado.edu/compsem/index.php?page=endendsystems&sub=temporal) projects. The followings show the distribution of each genre in our training data.
 
+| MiPACQ          | Sentence Counts | Token Counts |
+| --------------- | --------------: | -----------: |
+| mipacq_clinques | 1600            | 30138        |
+| mipacq_medpedia | 2796            | 49922        |
+| mipacq_mipacq1  | 4997            | 71351        |
+| mipacq_mipacq2  | 3385            | 41809        |
+| mipacq_mipacq3  | 1204            | 21342        |
+
+
+| SHARP                  | Sentence Counts | Token Counts |
+| ---------------------- | --------------: | -----------: |
+| sharp_sgh              | 7205            | 94445        |
+| sharp_sharp-clinical   | 6807            | 93914        |
+| sharp_sharp-stratified | 4320            | 43536        |
+| sharp_stratified-sgh   | 13668           | 139423       |
+
+
+| THYME                     | Sentence Counts | Token Counts |
+| ------------------------- | --------------: | -----------: |
+| thyme_temprel-217         | 26730           | 388275       |
+| thyme_temprel-braincancer | 18689           | 225258       |
 
 ## Bioinformatics Domain
 
