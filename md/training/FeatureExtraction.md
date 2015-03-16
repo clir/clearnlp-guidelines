@@ -94,8 +94,8 @@ Other Examples:
 | b | If first or last token | 	`<feature f0="i:b1" note="input is the last token"/>` |
 | ft | Value of specific feature |  `<feature f0="i:ft=f14"/>` |
 | orth | Orthographic features |  `<feature f0="i:orth"/>`|
-| ds | Children features |  `<feature f0="i:ds"/>`|
-| ds2 | Grandchildren features |  `<feature f0="i:ds2"/>`|
+| ds | Children features |  `<feature f0="i:dsm"/>` m denotes word lemma|
+| ds2 | Grandchildren features |  `<feature f0="i:ds2p"/>` p denotes pos tag|
 | a | Ambiguity class | `<feature f0="i+1:a" f1="i+2:a"/>`|
 | lmd | Left most child | `<feature f0="i_lmd2"/>`|
 | lns | Left nearest sibling | `<feature f0="i_lns"/>`|
