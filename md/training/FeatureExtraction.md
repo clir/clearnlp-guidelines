@@ -22,8 +22,8 @@ Features are stored as a xml file in the src/main/resource folder. The following
 | b | If first or last word | Use `b0` as a feature for the first word or `b1` as a feature for the last   |
 | ft | Value of specific feature | Mapping to a specific feature #. Example `ft14` represents a mapping to 14th feature used   |
 | orth | Orthographic features | Checks if the word is all digits or punctuations or just contains a single digit or punctuation. Checks if the first word is upper case or if all letters are upper cased/lowercased.  |
-| ds | Children features | Considers all children dependency labels of a node in dependency tree as a feature   |
-| ds2 | Grandchildren features |Considers all grandchildren dependency labels of a node in dependency tree as a feature   |
+| ds | Children features | Considers all children labels of a node in dependency tree as a feature (Add POS tag at the end of ds for a specific label e.g., m = lemma)   |
+| ds2 | Grandchildren features |Considers all grandchildren labels of a node in dependency tree as a feature (Add POS tag at the end of ds for a specific label e.g., m = lemma)     |
 | a | Ambiguity class | Considers the classes of a unseen node based on previous classes seen in the current data set. Example: If we are trying to classify the POS of the following words: `"ran away."` in the sentence `"He ran away."` Given that we have seen `"away"` as `RB` or `VBD` we take these classes into account to determine the POS for `"ran"`.  |
 | lmd | Left most child | Considers the left most child of the current node in the dependency tree if exist (The # coming after lmd represents the order) Example: `lmd2` is the second left most child |
 | lns | Left nearest sibling |Considers the left nearest sibling of the current node in the dependency tree if exist (The # coming after lns represents the order) Example: `lns2` is the second left nearest sibling |
