@@ -10,7 +10,8 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 * [How to install](md/getting_started/installation.md).
 * [How to add models](md/getting_started/models.md).
 * [How to use command-line tools](md/getting_started/command_line_tools.md).
-* [How to call NLP components using API](https://github.com/clir/clearnlp-tutorial/blob/master/src/main/java/edu/emory/clir/clearnlp/tutorial/NLPDecodeTutorial.java).
+* [How to call NLP components in our API](https://github.com/clir/clearnlp-tutorial/blob/master/src/main/java/edu/emory/clir/clearnlp/tutorial/NLPDecodeTutorial.java).
+* [How to develop an NLP component using our API](md/api/develop_nlp_component.md).
 
 ## Components
 
@@ -39,5 +40,4 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 ## APIs
 
 * [Use APIs with Maven and Eclipse](md/api/using_apis.md)
-* [Add components to ClearNLP](md/api/add_component_to_clearnlp.md)
 * [Demo project](md/demo/clearnlp_demo.md) 
