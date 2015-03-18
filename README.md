@@ -3,14 +3,14 @@
 The [ClearNLP](https://github.com/clir/clearnlp) project provides software and resources for natural language processing.  The project is currently developed by the [Center for Language and Information Research](http://nlp.mathcs.emory.edu) at [Emory University](http://emory.edu).
 
 * The latest version: [3.0.1](http://search.maven.org/#artifactdetails%7Cedu.emory.clir%7Cclearnlp%7C3.0.1%7Cjar).
-* Contact: [support@clearnlp.com](support@clearnlp.com), [google group](https://groups.google.com/forum/?fromgroups#!forum/clearnlp).
+* Contact: [google group](https://groups.google.com/forum/?fromgroups#!forum/clearnlp), [support@clearnlp.com](support@clearnlp.com).
 
 ## Quick Start
 
 * [How to install](md/getting_started/installation.md).
 * [How to add models](md/getting_started/models.md).
 * [How to use command-line tools](md/getting_started/command_line_tools.md).
-* [How to call NLP components using APIs](https://github.com/clir/clearnlp-tutorial/blob/master/src/main/java/edu/emory/clir/clearnlp/tutorial/NLPDecodeTutorial.java).
+* [How to call NLP components using API](https://github.com/clir/clearnlp-tutorial/blob/master/src/main/java/edu/emory/clir/clearnlp/tutorial/NLPDecodeTutorial.java).
 
 ## Components
 
@@ -24,8 +24,8 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 
 ## Training
 
-* [Training guidelines](md/training/training_guidelines.md).
-* [Feature Extraction](md/training/feature_extraction.md).
+* [How to train statistical models](md/training/training_guidelines.md).
+* [How to extract built-in features](md/training/feature_extraction.md).
 
 ## Formats
 
