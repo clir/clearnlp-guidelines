@@ -2,6 +2,7 @@
 
 ### Version 3.0.1 (3/25/2015)
 
+* Some debugging codes are stripped out.
 * Minor changes due to the convenience of API calls.
 * Directory paths for staticial models are changed to the top level.
 
@@ -10,7 +11,7 @@
 * ClearNLP is now developed by the [Center for Language and Information Research](http://nlp.mathcs.emory.edu) at [Emory University](http://emory.edu).
 * Our maven group ID is changed from `com.clearnlp` to `edu.emory.clir`.
 * All our repositories are moved from [github.com/clearnlp](http://github.com/clearnlp/) to [github.com/clir](https://github.com/clir/).
-* The version 3.0.0 is written from the scratch. All components in this version show significant speed-up over the previous ones (2~3 times), and the statistical models consume less disk and memory space.
+* The version 3.0.0 is written from the scratch. All components in this version show significant speed-up over the previous ones (2-3 times), and the statistical models consume less disk and memory space.
 * Staistical models for general, medical, and bioinformatics domains are provided (see [here](../getting_started/models.md); the medical and bioinformatics models will be uploaded by March 25th, 2015).
 * The tokenizer preserves non-UTF8 characters as they are; previously, they were converted to their UTF8 equivalent characters (e.g., smart double quotes to `"`).
 * The dependency parser is back to greedy parsing, which makes the model size much smaller (about 18 times less disk space) and much faster (about 10K tokens per second in Intel Xeon CPU) without sacrifying much accuracy (about .5% lower).
