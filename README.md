@@ -14,13 +14,14 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 
 ## Components
 
-* [Constituent to dependency converter](md/components/constituent_to_dependency_converter.md).
-* [Tokenizer and sentence segmenter](md/components/tokenizer_and_sentence_segmenter.md).
-* [Part-of-speech tagger](md/components/pos_tagger.md).
-* [Morphological analyzer](md/components/morphological_analyzer.md).
-* [Dependency parser](md/components/dependency_parser.md).
-* Semantic role labeler (coming in May, 2015).
-* Named entity recognizer (coming in Aug, 2015).
+* [Constituent to dependency conversion](md/components/dependency_conversion.md).
+* [Tokenization and segmentation](md/components/tokenization.md).
+* [Part-of-speech tagging](md/components/pos_tagging.md).
+* [Morphological analysis](md/components/morphological_analysis.md).
+* [Dependency parsing](md/components/dependency_parsing.md).
+* Semantic role labeling (coming in May, 2015).
+* Named entity recognization (coming in Aug, 2015).
+* Coreference resolution (coming in Oct, 2015).
 
 ## Training
 
