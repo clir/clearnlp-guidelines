@@ -1,12 +1,16 @@
 # ClearNLP Guidelines
 
-The [ClearNLP](https://github.com/clir/clearnlp) project provides software and resources for natural language processing.  The project is currently developed by the [Center for Language and Information Research](http://nlp.mathcs.emory.edu) at [Emory University](http://emory.edu).  This project is under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0) license.
+The [ClearNLP](https://github.com/clir/clearnlp) project provides software and resources for natural language processing.  The project is currently developed by the [Center for Language and Information Research](http://nlp.mathcs.emory.edu) at [Emory University](http://emory.edu).
 
-## Getting Started
+* The latest version: [3.0.1](http://search.maven.org/#artifactdetails%7Cedu.emory.clir%7Cclearnlp%7C3.0.1%7Cjar).
+* Contact: [support@clearnlp.com](support@clearnlp.com), [google group](https://groups.google.com/forum/?fromgroups#!forum/clearnlp).
+
+## Quick Start
 
 * [How to install](md/getting_started/installation.md).
 * [How to add models](md/getting_started/models.md).
 * [How to use command-line tools](md/getting_started/command_line_tools.md).
+* [How to call NLP components using APIs](https://github.com/clir/clearnlp-tutorial/blob/master/src/main/java/edu/emory/clir/clearnlp/tutorial/NLPDecodeTutorial.java).
 
 ## Components
 
@@ -20,8 +24,8 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 
 ## Training
 
-* [Feature Extraction] (md/training/FeatureExtraction.md)
-* [Training] (md/training/training_guidelines.md)
+* [Training guidelines](md/training/training_guidelines.md).
+* [Feature Extraction](md/training/feature_extraction.md).
 
 ## Formats
 
@@ -36,7 +40,3 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 * [Use APIs with Maven and Eclipse](md/api/using_apis.md)
 * [Add components to ClearNLP](md/api/add_component_to_clearnlp.md)
 * [Demo project](md/demo/clearnlp_demo.md) 
-
-## Contact
-* Email: [support@clearnlp.com](support@clearnlp.com).
-* [Discussion group](https://groups.google.com/forum/?fromgroups#!forum/clearnlp).

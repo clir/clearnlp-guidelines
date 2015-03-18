@@ -8,7 +8,7 @@
 
 ## Genreal Domain
 
-The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/LDC2013T19), [English Web Treebank](https://catalog.ldc.upenn.edu/LDC2012T13), and [QuestionBank](http://www.computing.dcu.ie/~jjudge/qtreebank/). The followings show the distribution of each genre in our training data.
+The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/LDC2013T19), [English Web Treebank](https://catalog.ldc.upenn.edu/LDC2012T13), and [QuestionBank](http://www.computing.dcu.ie/~jjudge/qtreebank/).
 
 | OntoNotes 5.0              | Sentence Counts | Token Counts |
 | -------------------------- | --------------: | -----------: |
@@ -36,127 +36,63 @@ The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/
 ### Without Maven
 
 1. Download the following models for the tasks you want to process.
- * Dictionary: [clearnlp-dictionary-1.0.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-dictionary/1.0/clearnlp-dictionary-1.0.jar) (required)
- * Part-of-speech tagging: [clearnlp-general-en-pos-1.1.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-general-en-pos/1.1/clearnlp-general-en-pos-1.1.jar)
- * Dependency parsing: [clearnlp-general-en-dep-1.2.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-general-en-dep/1.2/clearnlp-general-en-dep-1.2.jar)
+ * Dictionary: [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar).
+ * Part-of-speech tagging: [clearnlp-general-en-pos-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-pos/3.1/clearnlp-general-en-pos-3.1.jar).
+ * Dependency parsing: [clearnlp-general-en-dep-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-dep/3.1/clearnlp-general-en-dep-3.1.jar).
 
 2. Add all jar files to your Java classpath. If you are using the bash shell, it is something like the followings:
 		
-		export CLASSPATH=clearnlp-dictionary-x.x.jar:\\
-                 		 clearnlp-general-en-pos-x.x.jar:\\
-                 		 clearnlp-general-en-dep-x.X.jar:\\
-                 		 clearnlp-general-en-srl-x.x.jar:more_jar_files...
+		export CLASSPATH=clearnlp-dictionary-3.0.jar:\\
+                 		 clearnlp-general-en-pos-3.1.jar:\\
+                 		 clearnlp-general-en-dep-3.1.jar:.
                  		 
 ### With Maven
 
-Add the following lines to your 'pom.xml'.
+* Add the following lines to your `pom.xml`.
 
-		<dependencies>
-  		...
-			<dependency>
-		    	<groupId>com.clearnlp</groupId>
-		    	<artifactId>clearnlp-dictionary</artifactId>
-		    	<version>1.0</version>
-		  	</dependency>
-		  	<dependency>
-		    	<groupId>com.clearnlp</groupId>
-		    	<artifactId>clearnlp-general-en-pos</artifactId>
-		    	<version>1.1</version>
-		  	</dependency>
-		  	<dependency>
-		    	<groupId>com.clearnlp</groupId>
-		    	<artifactId>clearnlp-general-en-dep</artifactId>
-		    	<version>1.2</version>
-		  	</dependency>
-		  	<dependency>
-		    	<groupId>com.clearnlp</groupId>
-		    	<artifactId>clearnlp-general-en-srl</artifactId>
-		    	<version>1.1</version>
-		  	</dependency>
-		...
-		</dependencies>
+		<dependency>
+		  <groupId>edu.emory.clir</groupId>
+		  <artifactId>clearnlp</artifactId>
+		  <version>3.0.1</version>
+		</dependency>
+		<dependency>
+		  <groupId>edu.emory.clir</groupId>
+		  <artifactId>clearnlp-dictionary</artifactId>
+		  <version>3.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>edu.emory.clir</groupId>
+		  <artifactId>clearnlp-general-en-pos</artifactId>
+		  <version>3.1</version>
+		</dependency>
+		<dependency>
+		  <groupId>edu.emory.clir</groupId>
+		  <artifactId>clearnlp-general-en-dep</artifactId>
+		  <version>3.1</version>
+		</dependency>
 		
 ## Medical Domain
-The medical models are trained on various corpora, collected by the [MiPACQ](http://clear.colorado.edu/compsem/index.php?page=endendsystems&sub=mipacq), [SHARP](http://informatics.mayo.edu/sharp/index.php/Main_Page), and [THYME](http://clear.colorado.edu/compsem/index.php?page=endendsystems&sub=temporal) projects. The followings show the distribution of each genre in our training data.
+The medical models are trained on [MiPACQ](http://clear.colorado.edu/compsem/index.php?page=endendsystems&sub=mipacq), [SHARP](http://informatics.mayo.edu/sharp/index.php/Main_Page), and [THYME](http://clear.colorado.edu/compsem/index.php?page=endendsystems&sub=temporal) corpora.
 
-| MiPACQ          | Sentence Counts | Token Counts |
-| --------------- | --------------: | -----------: |
-| mipacq_clinques | 1600            | 30138        |
-| mipacq_medpedia | 2796            | 49922        |
-| mipacq_mipacq1  | 4997            | 71351        |
-| mipacq_mipacq2  | 3385            | 41809        |
-| mipacq_mipacq3  | 1204            | 21342        |
+| MiPACQ              | Sentence Counts | Token Counts |
+| ------------------- | --------------: | -----------: |
+| Clinical questions  | 1,600           |  30,138      |
+| Medpedia articles   | 2,796           |  49,922      |
+| Clinical notes      | 8,382           | 113,160      |
+| Pathological notes  | 1,204           |  21,342      |
 
+| SHARP                      | Sentence Counts | Token Counts |
+| -------------------------- | --------------: | -----------: |
+| Seattle group health notes |  7,205          |  94,445      |
+| Clinical notes             |  6,807          |  93,914      |
+| Stratified                 |  4,320          |  43,536      |
+| Stratified SGH             | 13,668          | 139,423      |
 
-| SHARP                  | Sentence Counts | Token Counts |
-| ---------------------- | --------------: | -----------: |
-| sharp_sgh              | 7205            | 94445        |
-| sharp_sharp-clinical   | 6807            | 93914        |
-| sharp_sharp-stratified | 4320            | 43536        |
-| sharp_stratified-sgh   | 13668           | 139423       |
-
-
-| THYME                     | Sentence Counts | Token Counts |
-| ------------------------- | --------------: | -----------: |
-| thyme_temprel-217         | 26730           | 388275       |
-| thyme_temprel-braincancer | 18689           | 225258       |
+| THYME                          | Sentence Counts | Token Counts |
+| ------------------------------ | --------------: | -----------: |
+| Clinical & patheological notes | 26,730          | 388,275      |
+| Braincancer                    | 18,689          | 225,258      |
 
 ## Bioinformatics Domain
 
-Coming soon...
-
-<!--The medical models are trained on various corpora, collected by the MiPACQ, SHARP, and THYME projects. The followings show the distribution of each genre in our training data.
-
-* MiPACQ: Clinical questions: 1,600 sentences, 30,138 tokens
-* MiPACQ: Medpedia articles: 2,796 sentences, 49,922 tokens
-* MiPACQ: clinical notes: 8,001 sentences, 107,191 tokens
-* MiPACQ: pathological notes: 1,225 sentences, 21,581 tokens
-* SHARP: Seattle group health clinical notes: 5,020 sentences, 61,124 tokens
-* SHARP: Seattle group health pathological notes: 2,294 sentences, 34,384 tokens
-* SHARP clinical notes: 6,787 sentences, 94,205 tokens
-* SHARP stratified: 4,312 sentences, 43,023 tokens
-* SHARP stratified SGH: 13,432 sentences, 139,266 tokens
-* TEMPREL clinical notes: 18,927 sentences, 255,604 tokens
-* TEMPREL pathological notes: 4,400 sentences, 80,064 tokens
-
-#### Without Maven
-1. Download the following models for the tasks you want to process.
-	- Dictionary: [clearnlp-dictionary-1.0.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-dictionary/1.0/clearnlp-dictionary-1.0.jar) (required)
-	- Part-of-speech tagging: [clearnlp-medical-en-pos-1.0.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-medical-en-pos/1.0/clearnlp-medical-en-pos-1.0.jar)
-	- Dependency parsing: [clearnlp-medical-en-dep-1.0.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-medical-en-dep/1.0/clearnlp-medical-en-dep-1.0.jar)
-	- Semantic role labeling: [clearnlp-medical-en-srl-1.0.jar](http://search.maven.org/remotecontent?filepath=com/clearnlp/clearnlp-medical-en-srl/1.0/clearnlp-medical-en-srl-1.0.jar)
-
-2. Add all jar files to your Java classpath. If you are using the bash shell, it is something like the followings:
-
-		export CLASSPATH=clearnlp-dictionary-1.0.jar:\\
-                 		 clearnlp-medical-en-pos-x.x.jar:\\
-                		 clearnlp-medical-en-dep-x.x.jar:\\
-                 		 clearnlp-medical-en-srl-x.x.jar:more_jar_files...
-                 		 
-#### With Maven
-All models can be retrieved from [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cclearnlp-medical-en). Add the following lines to your 'pom.xml'.
-
-		<dependencies>
-  		...
-		 	<dependency>
-		    	<groupId>com.clearnlp</groupId>
-		    	<artifactId>clearnlp-dictionary</artifactId>
-		    	<version>1.0</version>
-		  	</dependency>
-		  	<dependency>
-		    	<groupId>com.clearnlp</groupId>
-		    	<artifactId>clearnlp-medical-en-pos</artifactId>
-		    	<version>1.0</version>
-		  	</dependency>
-		  	<dependency>
-		    	<groupId>com.clearnlp</groupId>
-		    	<artifactId>clearnlp-medical-en-dep</artifactId>
-		    	<version>1.0</version>
-		  	</dependency>
-		  	<dependency>
-		    	<groupId>com.clearnlp</groupId>
-		    	<artifactId>clearnlp-medical-en-srl</artifactId>
-		    	<version>1.0</version>
-		  	</dependency>
-		...
-		</dependencies>-->
+The bioinformaitcs models are trained on [CRAFT](http://bionlp-corpora.sourceforge.net/CRAFT/) Treebank.
