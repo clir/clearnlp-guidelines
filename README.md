@@ -7,11 +7,10 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 
 ## Quick Start
 
-* [How to install](md/getting_started/installation.md).
-* [How to add models](md/getting_started/models.md).
-* [How to use command-line tools](md/getting_started/command_line_tools.md).
-* [How to call NLP components in our API](https://github.com/clir/clearnlp-tutorial/blob/master/src/main/java/edu/emory/clir/clearnlp/tutorial/NLPDecodeTutorial.java).
-* [How to develop an NLP component using our API](md/api/develop_nlp_component.md).
+* [How to install](md/quick_start/installation.md).
+* [How to add models](md/quick_start/models.md).
+* [How to run command-line tools](md/quick_start/command_line_tools.md).
+* [How to make API calls to NLP components](https://github.com/clir/clearnlp-tutorial/blob/master/src/main/java/edu/emory/clir/clearnlp/tutorial/NLPDecodeTutorial.java).
 
 ## Components
 
@@ -24,20 +23,18 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 * Named entity recognization (coming in Aug, 2015).
 * Coreference resolution (coming in Oct, 2015).
 
-## Training
-
-* [How to train statistical models](md/training/training_guidelines.md).
-* [How to extract built-in features](md/training/feature_extraction.md).
-
 ## Formats
 
+* [Configuraiton format](md/formats/configuration_format.md).
 * [Data format](md/formats/data_format.md)
 * [Dependency labels](md/dependency/dependency_guidelines.md)
 * [Headrule file format](md/formats/headrule_file_format.md)
 * [Train configuration file format](md/formats/configuration/config_train.md)
 * [Decode configuration file format](md/formats/configuration/config_decode.md)
 
-## APIs
+## Under Construction
 
+* [How to develop an NLP component using our API](md/api/develop_nlp_component.md).
 * [Use APIs with Maven and Eclipse](md/api/using_apis.md)
 * [Demo project](md/demo/clearnlp_demo.md) 
+* [How to extract built-in features](md/training/feature_extraction.md).
