@@ -1,5 +1,10 @@
 # Command-Line Tools
 
+## Contents
+
+* [Decoding](#decoding).
+* [Training](#training).
+
 ## Decoding
 
 The following shows the command to run the NLP pipeline for part-of-speech tagging, morphological analysis, dependency parsing, or semantic role labeling: `pos`, `morph`, `dep`, `srl`.
