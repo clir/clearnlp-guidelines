@@ -38,7 +38,7 @@ The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/
 1. Download the following models for the tasks you want to process.
  * Dictionary: [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar).
  * Part-of-speech tagging: [clearnlp-general-en-pos-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-pos/3.1/clearnlp-general-en-pos-3.1.jar).
- * Dependency parsing: [clearnlp-general-en-dep-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-dep/3.1/clearnlp-general-en-dep-3.1.jar).
+ * Dependency parsing: [clearnlp-general-en-dep-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-dep/3.1/clearnlp-general-en-dep-3.1.jar).
 
 2. Add all jar files to your Java classpath. If you are using the bash shell, it is something like the followings:
 		
@@ -72,6 +72,7 @@ The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/
 		</dependency>
 		
 ## Medical Domain
+
 The medical models are trained on [MiPACQ](http://clear.colorado.edu/compsem/index.php?page=endendsystems&sub=mipacq), [SHARP](http://informatics.mayo.edu/sharp/index.php/Main_Page), and [THYME](http://clear.colorado.edu/compsem/index.php?page=endendsystems&sub=temporal) corpora.
 
 | MiPACQ              | Sentence Counts | Token Counts |
@@ -96,3 +97,7 @@ The medical models are trained on [MiPACQ](http://clear.colorado.edu/compsem/ind
 ## Bioinformatics Domain
 
 The bioinformaitcs models are trained on [CRAFT](http://bionlp-corpora.sourceforge.net/CRAFT/) Treebank.
+
+| CRAFT          | Sentence Counts | Token Counts |
+| -------------- | --------------: | -----------: |
+| Training data  | 16,297          |  452,769     |
