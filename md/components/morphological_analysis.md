@@ -1,6 +1,6 @@
 # Morphological Analysis
 
-Our morphological analyzer generates lemmas (root forms) of word tokens. It is a rule-based analyzer inspired by the [WordNet morphy](http://wordnet.princeton.edu/man/morphy.7WN.html) although it uses a larger dictionary gathered from various sources and slightly more advanced heuristics. Furthermore, our analyzer normalizes numbers, redundant punctuation, URLs, etc. (see the examples below), which is found to be useful for several NLP tasks. See [how to run command-line tools](md/quick_start/command_line_tools.md) for more details about decoding and training.
+Our morphological analyzer generates lemmas (root forms) of word tokens. It is a rule-based analyzer inspired by the [WordNet morphy](http://wordnet.princeton.edu/man/morphy.7WN.html) although it uses a larger dictionary gathered from various sources and slightly more advanced heuristics. Furthermore, our analyzer normalizes numbers, redundant punctuation, URLs, etc. (see the examples below), which is found to be useful for several NLP tasks. See [how to run command-line tools](md/quick_start/command_line_tools.md) for more details about decoding.
 
 ## Normalization
 

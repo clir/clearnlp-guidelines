@@ -1,4 +1,4 @@
-# Dependency Parser
+# Dependency Parsing
 
 Our dependency parser uses a transition-based, non-projective parsing algorithm coupled with bootstrapping. Our parsing algorithm is guaranteed to run in O(*n*) for projective parsing and in an expected linear time for non-projective parsing. Our dependency parser processes about 15K tokens per second on an Intel Xeon 2.30GHz machine and shows state-of-the-art accuracy for greedy parsing. See [how to run command-line tools](md/quick_start/command_line_tools.md) for more details about decoding and training.
 
