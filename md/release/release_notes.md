@@ -1,10 +1,15 @@
 # Release Notes
 
-### Version 3.0.1 (3/25/2015)
+### Version 3.0.2 (3/21/2015)
+
+* Arg4j argument documentation is updated.
+* [Javadoc](http://nlp.mathcs.emory.edu/clearnlp/javadoc/) for [`DEPNode`](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/dependency/DEPNode.java) and [`DEPTree`](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/dependency/DEPTree.java) are added.
+
+### Version 3.0.1 (3/17/2015)
 
 * Some debugging codes are stripped out.
-* Minor changes due to the convenience of API calls.
 * Directory paths for staticial models are changed to the top level.
+* Minor changes in configuration classes due to the convenience of API calls.
 
 ### Version 3.0.0 (3/15/2015)
 
@@ -17,7 +22,7 @@
 * The dependency parser is back to greedy parsing, which makes the model size much smaller (about 18 times less disk space) and much faster (about 10K tokens per second in Intel Xeon CPU) without sacrifying much accuracy (about .5% lower).
 * This version does not include the semantic role labeler.  There have been many changes in [PropBank](http://verbs.colorado.edu/propbank/) and we decided to spend another month for developing a new semantic role labeler.  The semantic role labeler will be ready in May, 2015.
 * We are preparing a named entity recognizer and a coreference resolution system.  These systems will be ready in August, 2015.
-* Please read our [guidelines](https://github.com/clir/clearnlp-guidelines) for more details (e.g., training, decoding, APIs).
+* Better documentation is provided at our [guidelines](https://github.com/clir/clearnlp-guidelines) project for more details about training, decoding, [javadoc](http://nlp.mathcs.emory.edu/clearnlp/javadoc/), etc.
 
 
 ### Previous Versions

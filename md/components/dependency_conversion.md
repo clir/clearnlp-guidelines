@@ -31,17 +31,17 @@ The dictionary must be added before running the converter. See [how to add model
 * A headrule file `-h` can be found here: [headrule\_en\_stanford.txt](https://github.com/clir/clearnlp/blob/master/src/main/resources/headrules/headrule_en_stanford.txt) (see [headrule file format](../formats/headrule_format.md)).
 * The input path `-i` can point to either a file or a directory. When the input path points to a file, only the specific file is processed. When the input path points to a directory, all files with the input file extension `-pe|re` under the specific directory are processed.
 * The langauge `-l` specifies the input language. See [TLanguage](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/util/lang/TLanguage.java) for all supported languages.
-* The output file extension `-oe` is appended to each input filename, and generates the corresponding output file.
+* The output file extension `-oe` is appended to each parse filename, and generates the corresponding output file.
 * The parse file extension `-pe` specifies the extension of the Treebank files. This option is used only when the input path `-i` points to a directory.
 * The parse file extension `-re` specifies the extension of the PropBank files. This option is used only when the input path `-i` points to a directory.
 		
-The following command takes the input file ([wsj\_0001.parse](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/wsj_0001.parse)) and the headrule file ([headrule\_en\_stanford.txt](http://clearnlp.googlecode.com/git/src/main/resources/headrule/headrule_en_stanford.txt)), and generates the output file ([wsj\_0001.parse.dep](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/wsj_0001.parse.dep)).
+The following command takes the input file ([wsj\_0001.parse](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/wsj_0001.parse)) and the headrule file ([headrule\_en\_stanford.txt](https://github.com/clir/clearnlp/blob/master/src/main/resources/headrules/headrule_en_stanford.txt)), and generates the output file ([wsj\_0001.parse.dep](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/wsj_0001.parse.dep)).
 
 	java edu.emory.clir.clearnlp.bin.C2DConvert -h headrule_en_stanford.txt -i wsj_0001.parse
 
 ## Input
 
-Each tree must start with an empty clause (example 1) or a `TOP` clause (example 2).
+Each tree must start with an empty clause (example 1) or the `TOP` clause (example 2).
 
 * Example 1 
 

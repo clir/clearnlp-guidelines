@@ -38,7 +38,7 @@ In the tab separated values format, each column, delimited by tabs, represents a
 * `form`: word form.
 * `lemma`: lemma.
 * `pos`: part-of-speech tag.
-* `feats`: extra features; different features are delimited by `|`, keys and values are delimited by `=`, and `_` indicates no feature.
+* `feats`: extra features; different features are delimited by `|`, keys and values are delimited by `=` (`_` indicates no feature).
 * `headId`: head token ID.
 * `deprel`: dependency label.
 * `sheads`: semantic heads (`_` indicates no semantic head).

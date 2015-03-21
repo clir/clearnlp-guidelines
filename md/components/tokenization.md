@@ -2,14 +2,14 @@
 
 Our tokenizer takes a raw text and splits tokens by their morphological aspects. It also groups tokens into sentences. Our tokenizer is based on the [LDC](https://www.ldc.upenn.edu/) tokenizer used for creating English Treebanks although it uses more robust heuristics. Here are some key features about our tokenizer.
 
-* Emoticons are recognized as one unit (e.g., :-), ^_^).
-* Hyperlinks are recognized as one unit (google.com, jinho@gmail.com, index.html).
-* Numbers consisting of punctuation are recognized as one unit (e.g., 0.1, 2/3).
-* Repeated punctuation are grouped together (e.g., ---, ...).
-* Abbreviations are recognized as one unit (e.g., Prof., Ph.D).
-* File extensions are not tokenized (e.g., clearnlp.zip, tokenizer.doc).
-* Units are tokenized (e.g., 1 kg, 2 cm).
-* Usernames including periods are recognized as one unit (e.g., jinho.choi).
+* Emoticons are recognized as one unit (e.g., `:-)`, `^_^`).
+* Hyperlinks are recognized as one unit (`emory.edu`, `jinho@emory.edu`, `index.html`).
+* Numbers consisting of punctuation are recognized as one unit (e.g., `0.1`, `2/3`).
+* Repeated punctuation are grouped together (e.g., `---`, `...`).
+* Abbreviations are recognized as one unit (e.g., `Prof.`, `Ph.D`).
+* File extensions are not tokenized (e.g., `clearnlp.zip`, `tokenizer.doc`).
+* Units are tokenized (e.g., `1 kg`, `2 cm`).
+* Usernames including periods are recognized as one unit (e.g., `jinho.choi`).
 
 
 ## Decoding
@@ -28,6 +28,6 @@ The dictionary must be added before running the tokenizer. See [how to add model
 * The input file extension `-ie` specifies the extension of the input files. The default value `*` implies files with any extension. This option is used only when the input path `-i` points to a directory.
 * The output file extension `-oe` is appended to each input filename, and generates the corresponding output file.
 
-The following command takes the input file ([clearnlp.txt](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt)), and generates the output file ([clearnlp.txt.tok](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt.tok)).
+The following command takes the input file ([clearnlp.txt](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt)) in the raw format, and generates the output file ([clearnlp.txt.tok](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt.tok)) in the line format (see [data_format](../formats/data_format.md)).
 
 	java edu.emory.clir.clearnlp.bin.Tokenize -i clearnlp.txt
