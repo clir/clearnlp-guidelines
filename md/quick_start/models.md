@@ -5,19 +5,19 @@
 * [Dictionary](#dictionary).
 * [General domain](#general-domain).
 * [Medical domain](#medical-domain).
-* [Bioinformations domain](#bioinformations-domain).
+* [Bioinformations domain](#bioinformatics-domain).
 
 ## Dictionary
 
 The dictionary is required for many components in ClearNLP.
 
-### Without Maven
+#### Without Maven
 
 1. Download [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar), and add it to your Java classpath.
 		
 		export CLASSPATH=clearnlp-dictionary-3.0.jar:.
                  		 
-### With Maven
+#### With Maven
 
 * Add the following lines to your `pom.xml`.
 
@@ -53,7 +53,7 @@ The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/
 | ------------ | --------------: | -----------: |
 | Questions    | 3,199           | 29,715       |
 
-### Without Maven
+#### Without Maven
 
 1. Download the following models for the tasks you want to process.
  * Part-of-speech tagging: [clearnlp-general-en-pos-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-pos/3.1/clearnlp-general-en-pos-3.1.jar).
@@ -64,7 +64,7 @@ The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/
 		export CLASSPATH=clearnlp-general-en-pos-3.1.jar:\\
                  		 clearnlp-general-en-dep-3.1.jar:.
                  		 
-### With Maven
+#### With Maven
 
 * Add the following lines to your `pom.xml`.
 
@@ -102,7 +102,7 @@ The medical models are trained on [MiPACQ](http://clear.colorado.edu/compsem/ind
 | Clinical & patheological notes | 26,730          | 388,275      |
 | Braincancer                    | 18,689          | 225,258      |
 
-### Without Maven
+#### Without Maven
 
 1. Download the following models for the tasks you want to process.
  * Part-of-speech tagging: [clearnlp-medical-en-pos-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-medical-en-pos/3.0/clearnlp-medical-en-pos-3.0.jar).
@@ -113,7 +113,7 @@ The medical models are trained on [MiPACQ](http://clear.colorado.edu/compsem/ind
 		export CLASSPATH=clearnlp-medical-en-pos-3.0.jar:\\
                  		 clearnlp-medical-en-dep-3.0.jar:.
                  		 
-### With Maven
+#### With Maven
 
 * Add the following lines to your `pom.xml`.
 
@@ -136,6 +136,8 @@ The bioinformaitcs models are trained on [CRAFT](http://bionlp-corpora.sourcefor
 | -------------- | --------------: | -----------: |
 | Training data  | 16,297          |  452,769     |
 
+#### Without Maven
+
 1. Download the following models for the tasks you want to process.
  * Part-of-speech tagging: [clearnlp-bioinformatics-en-pos-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-bioinformatics-en-pos/3.0/clearnlp-bioinformatics-en-pos-3.0.jar).
  * Dependency parsing: [clearnlp-bioinformatics-en-dep-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-bioinformatics-en-dep/3.0/clearnlp-bioinformatics-en-dep-3.0.jar).
@@ -145,7 +147,7 @@ The bioinformaitcs models are trained on [CRAFT](http://bionlp-corpora.sourcefor
 		export CLASSPATH=clearnlp-bioinformatics-en-pos-3.0.jar:\\
                  		 clearnlp-bioinformatics-en-dep-3.0.jar:.
                  		 
-### With Maven
+#### With Maven
 
 * Add the following lines to your `pom.xml`.
 
