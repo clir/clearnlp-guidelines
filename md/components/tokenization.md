@@ -1,5 +1,6 @@
-# Tokenizer and Sentence Segmenter
-Our tokenizer takes a raw text and splits words by their morphological aspects. It also gives an option of grouping tokens into sentences. Our tokenizer is based on the [LDC](https://www.ldc.upenn.edu/) tokenizer used for creating English Treebanks although it uses more robust heuristics. Here are some key features about our tokenizer.
+# Tokenization and Segmentation
+
+Our tokenizer takes a raw text and splits tokens by their morphological aspects. It also groups tokens into sentences. Our tokenizer is based on the [LDC](https://www.ldc.upenn.edu/) tokenizer used for creating English Treebanks although it uses more robust heuristics. Here are some key features about our tokenizer.
 
 * Emoticons are recognized as one unit (e.g., :-), ^_^).
 * Hyperlinks are recognized as one unit (google.com, jinho@gmail.com, index.html).
@@ -10,37 +11,23 @@ Our tokenizer takes a raw text and splits words by their morphological aspects. 
 * Units are tokenized (e.g., 1 kg, 2 cm).
 * Usernames including periods are recognized as one unit (e.g., jinho.choi).
 
-Currently our tokenizer supports only English.
 
-### Decoding
-A dictionary must be added before running the tokenizer. See the [how to add models](../getting_started/add_models.md) page for the instructions of adding our dictionary to your system.
+## Decoding
 
-	java com.clearnlp.run.Tokenizer -i <filepath> [-ie <regex> -oe <string> -if <string> -of <string> -l <language> -twit]
+The dictionary must be added before running the tokenizer. See [how to add models](../quick_start/models.md) for the instructions of adding our dictionary to your system.
+
+	java edu.emory.clir.clearnlp.bin.Tokenize -i <filepath> [-l <language> -ie <string> -oe <string>]
+
+	-i <filepath> : input path (required)
+	-l <language> : language (default: english)
+	-ie <regex>   : input file extension (default: *)
+	-oe <string>  : output file extension (default: tok)
 	 
-	 -i <filepath>   : input path (required)
-	 -ie <regex>     : input file extension (default: .*)
-	 -oe <string>    : output file extension (default: tok)
-	 -if <string>    : input format (default: raw)
-	 -of <string>    : input format (default: line)
-	 -l <language>   : language (default: en)
-	 -twit <boolean> : if set, do not tokenize special punctuation used in twitter
-	 
-* The input path (`-i`) can point to either a file or a directory. When the input path points to a file, only the specific file is processed. When the input path points to a directory, all files with the input file extension (`-ie`) under the specific directory are processed.
-* The input file extension (`-ie`) can be either a string or a r[egular expression](http://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html) specifying the extension of the input files. The default value (`.*`) implies files with any extension. This option is used only when the input path (`-i`) points to a directory.
-* The output file extension (`-oe`) gets appended to input filenames, and used to generate corresponding output files.
-* The input format can be either `raw` or `line`. If the raw format is chosen, the tokenizer automatically groups tokens into sentences. If the line format is chosen, the tokenizer treats each line as one sentence (see the [data format](../formats/data_format.md) page).
-* The output format can be either `line` or `tok` (see the [data format](../formats/data_format.md) page).
-* The language (`-l`) indicates the language of the constituent trees to be convereted. Currently, our conversion supports only English (`en`).
-* If the `twit` option is used, special punctuation such as & and # used in twitter are not tokenized.
+* The input path `-i` can point to either a file or a directory. When the input path points to a file, only the specific file is processed. When the input path points to a directory, all files with the input file extension `-ie` under the specific directory are processed.
+* The langauge `-l` specifies the input language. See [TLanguage](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/util/lang/TLanguage.java) for all supported languages.
+* The input file extension `-ie` specifies the extension of the input files. The default value `*` implies files with any extension. This option is used only when the input path `-i` points to a directory.
+* The output file extension `-oe` is appended to each input filename, and generates the corresponding output file.
 
-The following command takes a sample input file ([iphone5.txt](https://github.com/clearnlp/clearnlp-demo/blob/master/src/main/resources/sample/iphone5.txt)) and generates an output file ([iphone5.txt.tok](https://github.com/clearnlp/clearnlp-demo/blob/master/src/main/resources/sample/iphone5.txt.tok)) in the [line format](../formats/data_format.md).
+The following command takes the input file ([clearnlp.txt](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt)), and generates the output file ([clearnlp.txt.tok](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt.tok)).
 
-	java com.clearnlp.run.Tokenizer -i iphone5.txt
-	
-### Training
-Here are some guidelines for training ClearNLP components:
-
-* [Add components to ClearNLP](../training/add_component_to_clearnlp.md)
-* [Feature Extraction] (../training/FeatureExtraction.md)
-
-If you are experience any problem, please feel free to contatct the owner of ClearNLP: [support@clearnlp.com](mailto:support@clearnlp.com)
+	java edu.emory.clir.clearnlp.bin.Tokenize -i clearnlp.txt

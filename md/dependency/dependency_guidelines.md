@@ -1,4 +1,4 @@
-# Dependency Labels
+# Emory Dependency Labels
 
 
 | Label  | Description  | Example |

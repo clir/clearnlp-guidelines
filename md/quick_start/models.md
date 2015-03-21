@@ -13,7 +13,7 @@ The dictionary is required for many components in ClearNLP.
 
 #### Without Maven
 
-1. Download [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar), and add it to your Java classpath.
+* Download [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar), and add it to your Java classpath.
 		
 		export CLASSPATH=clearnlp-dictionary-3.0.jar:.
                  		 
@@ -27,7 +27,7 @@ The dictionary is required for many components in ClearNLP.
 		  <version>3.0</version>
 		</dependency>
 
-## Genreal Domain
+## General Domain
 
 The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/LDC2013T19), [English Web Treebank](https://catalog.ldc.upenn.edu/LDC2012T13), and [QuestionBank](http://www.computing.dcu.ie/~jjudge/qtreebank/).
 
