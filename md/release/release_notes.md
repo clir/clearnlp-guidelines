@@ -17,9 +17,7 @@
 * The dependency parser is back to greedy parsing, which makes the model size much smaller (about 18 times less disk space) and much faster (about 10K tokens per second in Intel Xeon CPU) without sacrifying much accuracy (about .5% lower).
 * This version does not include the semantic role labeler.  There have been many changes in [PropBank](http://verbs.colorado.edu/propbank/) and we decided to spend another month for developing a new semantic role labeler.  The semantic role labeler will be ready in May, 2015.
 * We are preparing a named entity recognizer and a coreference resolution system.  These systems will be ready in August, 2015.
-* The following guidelines are available now:
- * [How to train staistical models](../training/training_guidelines.md).
- * [How to develop NLP components](../training/training_guidelines.md).
+* Please read our [guidelines](https://github.com/clir/clearnlp-guidelines) for more details (e.g., training, decoding, APIs).
 
 
 ### Previous Versions

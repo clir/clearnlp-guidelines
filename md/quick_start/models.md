@@ -2,9 +2,30 @@
 
 ## Contents
 
+* [Dictionary](#dictionary).
 * [General domain](#general-domain).
 * [Medical domain](#medical-domain).
 * [Bioinformations domain](#bioinformations-domain).
+
+## Dictionary
+
+The dictionary is required for many components in ClearNLP.
+
+### Without Maven
+
+1. Download [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar), and add it to your Java classpath.
+		
+		export CLASSPATH=clearnlp-dictionary-3.0.jar:.
+                 		 
+### With Maven
+
+* Add the following lines to your `pom.xml`.
+
+		<dependency>
+		  <groupId>edu.emory.clir</groupId>
+		  <artifactId>clearnlp-dictionary</artifactId>
+		  <version>3.0</version>
+		</dependency>
 
 ## Genreal Domain
 
@@ -32,34 +53,21 @@ The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/
 | ------------ | --------------: | -----------: |
 | Questions    | 3,199           | 29,715       |
 
-
 ### Without Maven
 
 1. Download the following models for the tasks you want to process.
- * Dictionary: [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar).
  * Part-of-speech tagging: [clearnlp-general-en-pos-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-pos/3.1/clearnlp-general-en-pos-3.1.jar).
  * Dependency parsing: [clearnlp-general-en-dep-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-dep/3.1/clearnlp-general-en-dep-3.1.jar).
 
-2. Add all jar files to your Java classpath. If you are using the bash shell, it is something like the followings:
+2. Add all jar files to your Java classpath.
 		
-		export CLASSPATH=clearnlp-dictionary-3.0.jar:\\
-                 		 clearnlp-general-en-pos-3.1.jar:\\
+		export CLASSPATH=clearnlp-general-en-pos-3.1.jar:\\
                  		 clearnlp-general-en-dep-3.1.jar:.
                  		 
 ### With Maven
 
 * Add the following lines to your `pom.xml`.
 
-		<dependency>
-		  <groupId>edu.emory.clir</groupId>
-		  <artifactId>clearnlp</artifactId>
-		  <version>3.0.1</version>
-		</dependency>
-		<dependency>
-		  <groupId>edu.emory.clir</groupId>
-		  <artifactId>clearnlp-dictionary</artifactId>
-		  <version>3.0</version>
-		</dependency>
 		<dependency>
 		  <groupId>edu.emory.clir</groupId>
 		  <artifactId>clearnlp-general-en-pos</artifactId>
@@ -94,6 +102,32 @@ The medical models are trained on [MiPACQ](http://clear.colorado.edu/compsem/ind
 | Clinical & patheological notes | 26,730          | 388,275      |
 | Braincancer                    | 18,689          | 225,258      |
 
+### Without Maven
+
+1. Download the following models for the tasks you want to process.
+ * Part-of-speech tagging: [clearnlp-medical-en-pos-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-medical-en-pos/3.0/clearnlp-medical-en-pos-3.0.jar).
+ * Dependency parsing: [clearnlp-medical-en-dep-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-medical-en-dep/3.0/clearnlp-medical-en-dep-3.0.jar).
+
+2. Add all jar files to your Java classpath. If you are using the bash shell, it is something like the followings:
+		
+		export CLASSPATH=clearnlp-medical-en-pos-3.0.jar:\\
+                 		 clearnlp-medical-en-dep-3.0.jar:.
+                 		 
+### With Maven
+
+* Add the following lines to your `pom.xml`.
+
+		<dependency>
+		  <groupId>edu.emory.clir</groupId>
+		  <artifactId>clearnlp-medical-en-pos</artifactId>
+		  <version>3.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>edu.emory.clir</groupId>
+		  <artifactId>clearnlp-medical-en-dep</artifactId>
+		  <version>3.0</version>
+		</dependency>
+
 ## Bioinformatics Domain
 
 The bioinformaitcs models are trained on [CRAFT](http://bionlp-corpora.sourceforge.net/CRAFT/) Treebank.
@@ -101,3 +135,27 @@ The bioinformaitcs models are trained on [CRAFT](http://bionlp-corpora.sourcefor
 | CRAFT          | Sentence Counts | Token Counts |
 | -------------- | --------------: | -----------: |
 | Training data  | 16,297          |  452,769     |
+
+1. Download the following models for the tasks you want to process.
+ * Part-of-speech tagging: [clearnlp-bioinformatics-en-pos-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-bioinformatics-en-pos/3.0/clearnlp-bioinformatics-en-pos-3.0.jar).
+ * Dependency parsing: [clearnlp-bioinformatics-en-dep-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-bioinformatics-en-dep/3.0/clearnlp-bioinformatics-en-dep-3.0.jar).
+
+2. Add all jar files to your Java classpath. If you are using the bash shell, it is something like the followings:
+		
+		export CLASSPATH=clearnlp-bioinformatics-en-pos-3.0.jar:\\
+                 		 clearnlp-bioinformatics-en-dep-3.0.jar:.
+                 		 
+### With Maven
+
+* Add the following lines to your `pom.xml`.
+
+		<dependency>
+		  <groupId>edu.emory.clir</groupId>
+		  <artifactId>clearnlp-bioinformatics-en-pos</artifactId>
+		  <version>3.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>edu.emory.clir</groupId>
+		  <artifactId>clearnlp-bioinformatics-en-dep</artifactId>
+		  <version>3.0</version>
+		</dependency>

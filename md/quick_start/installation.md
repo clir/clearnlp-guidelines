@@ -4,7 +4,7 @@
 
 * Create a directory called `clearnlp`.
 * Download the following jar files and place them under the `clearnlp` directory:<br>[`clearnlp`](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp/3.0.1/clearnlp-3.0.1.jar), [`args4j`](http://search.maven.org/remotecontent?filepath=args4j/args4j/2.0.29/args4j-2.0.29.jar), [`log4j`](http://search.maven.org/remotecontent?filepath=log4j/log4j/1.2.17/log4j-1.2.17.jar), [`hppc`](http://search.maven.org/remotecontent?filepath=com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar), [`xz`](http://search.maven.org/remotecontent?filepath=org/tukaani/xz/1.5/xz-1.5.jar).
-* Add all the jar files in the `clearnlp` directory to your Java classpath. If you are using the bash shell, it is something like the followings:
+* Add all the jar files to your Java classpath. If you are using the bash shell, it is something like the followings:
 		
 		CLEARNLP=some_path/clearnlp
 		export CLASSPATH=$CLEARNLP/clearnlp-3.0.1.jar:\\
