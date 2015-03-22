@@ -1,4 +1,4 @@
-3.0.2# Installation
+# Installation
 
 ## Without Maven
 
