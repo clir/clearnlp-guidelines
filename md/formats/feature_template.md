@@ -45,7 +45,7 @@ The following shows our built-in feature templates (see [`FieldType`](https://gi
 | `m` | The lemma (see [`mophological analysis`](../components/morphological_analysis.md)). |
 | `p` | The part-of-speech tag. |
 | `n` | The named entity tag. |
-| `d` | The dependency label (see [dependency guidelines](../formats/dependency_guidelines.md)). |
+| `d` | The dependency label (see [dependency guidelines](../dependency/dependency_guidelines.md)). |
 | `v` | The valency, `l|r|a` coming after `v` reprensents the left, right, or both valency.<br>&#8226; e.g,`va` of a node with 1 left dependent and 2+ right dependents&#8594;`"<->>"`.<br>&#8226;[`getValency(DirectionType)`](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/dependency/DEPNode.java). |
 | `a` | The ambiguity class described [here](http://aclweb.org/anthology-new/P/P12/P12-2071.pdf), used for part-of-speech tagging. |
 | `t` | The distance between `i` and `j` pointers.<br>&#8226; e.g, distance between the predicate `i` and the argument `j` in semantic role labeling. |
