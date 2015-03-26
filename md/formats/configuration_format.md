@@ -52,7 +52,7 @@ The following describes the specification of each element.
 
 ## Training
 
-* [For part-of speech tagging](../components/pos_tagging.md).
+* [Part-of speech tagging](../components/pos_tagging.md#configuration).
 
 The following shows a sample configuration file for training: [config_train.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_train.xml).
 
@@ -92,11 +92,7 @@ The following describes the specification of each element.
 
 | Element | Description |
 | :-----: | :---------- |
-| `<language>` | See above. |
-| `<reader>` | See above. |
-| `<pos>` | Specifies the configuration of part-of-speech tagging.<ul><li>`proper_noun_tagset`: pos tags for proper nouns.</li><li>`ambiguity_class_threshold`: likelihood threshold for ambiguity classes.</li></ul> |
 | `<dep>` | Specifies the configuration of dependency parsing.<ul><li>`evaluate_punctuation`: if `true`, evaluate punctuation during development.</li><li>`root_label`: label of the root node.</li></ul> |
-| `<trainer>` | Specifies the training algorithm and its parameters.<ul><li>`algorithm`: `adagrad` for AdaGrad, `liblinear`for Liblinear.</li><li>`type`: `svm` for hinge loss classification, `lr`for logistic regression.</li><li>`labelCutoff`: count threshold for labels appearing less than `N` times.</li><li>`featureCutoff`: count threshold for features appearing less than `N` times.</li><li>`average`: if `true`, apply averaging to online learning.</li><li>`alpha`: learning rate (AdaGrad).</li><li>`rho`: ridge to keep the inverse covariance well-conditioned (AdaGrad).</li></ul> |
 | `<bootstraps>` | if `true`, use bootstrap iterations for training sequences. | 
 
 `<trainer>` specifies the training algorithm and its parameters.
