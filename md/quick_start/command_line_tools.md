@@ -40,7 +40,7 @@ clearnlp.txt
 
 ## Training
 
-The following shows the command to train the model for part-of-speech tagging, dependency parsing, or semantic role labeling: `pos`, `dep`, `srl`.
+The following shows the command to train the model for [part-of-speech tagging](../components/pos_tagging.md#training), dependency parsing, or semantic role labeling: `pos`, `dep`, `srl`. See more details about individual components in their pages.
 
 ```
 java edu.emory.clir.clearnlp.bin.NLPTrain -mode <mode> -c <filename> -f <filename> -t <filepath> -d <filepath> [-m <filename> -te <string> -de <string>]

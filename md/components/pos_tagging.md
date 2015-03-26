@@ -8,7 +8,7 @@ Our part-of-speech tagger uses the generalized model of our previous approach, d
 
 ### Configuration
 
-The following shows a sample configuration file for training: [config\_train_pos.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_train_pos.xml).
+The following shows a sample configuration file: [config\_train_pos.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_train_pos.xml).
 
 ```
 <configuration>
@@ -38,3 +38,64 @@ The following shows a sample configuration file for training: [config\_train_pos
 | `<pos>` | Specifies the configuration for part-of-speech tagging.<ul><li>`ambiguity_class_threshold`: collect only ambiguity classes whose likelihoods are greater than this threshold (exclusive).</li><li>`document_frequency_cutoff `: use features extracted from only words whose document frequencies are greater than this cutoff (exclusive).</li><li>`document_size`: consider this many number of trees as one document.</li></ul> |
 | `<trainer>` | Specifies the training algorithm  (see [configuration format](../formats/configuration_format.md#training)). |
 | `<bootstraps>` | if `true`, use bootstrapping for sequence classification. | 
+
+### Feature template
+
+The following shows a sample feature template file: [feature\_en_pos.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/features/feature_en_pos.xml).  See [feature template](../formats/feature_template.md) for more details.
+
+```
+<!--Feature template for POS tagging in English -->
+<feature_template>
+    <!-- 1-gram features -->
+    <feature f0="i:f2"/>
+    <feature f0="i-2:f2"/>
+    <feature f0="i-1:f2"/>
+    <feature f0="i+1:f2"/>
+    <feature f0="i+2:f2"/>
+
+    <feature f0="i:a"/>
+    <feature f0="i-3:p"/>
+    <feature f0="i-2:p"/>
+    <feature f0="i-1:p"/>
+    <feature f0="i+1:a"/>
+    <feature f0="i+2:a"/>
+    <feature f0="i+3:a"/>
+
+    <feature f0="i:f4"/>
+    <feature f0="i-1:f4"/>
+    <feature f0="i+1:f4"/>
+
+    <!-- 2-gram features -->
+    <feature f0="i-2:f3" f1="i-1:f3"/>
+    <feature f0="i-1:f3" f1="i:f3"/>
+    <feature f0="i:f3"   f1="i+1:f3"/>
+    <feature f0="i-1:f3" f1="i+1:f3"/>
+    <feature f0="i+1:f3" f1="i+2:f3"/>
+
+    <feature f0="i-2:p" f1="i-1:p"/>
+    <feature f0="i+1:a" f1="i+2:a"/>
+    <feature f0="i-1:p" f1="i+1:a"/>
+
+    <!-- 3-gram features -->
+    <feature f0="i-2:p" f1="i-1:p" f2="i:a"/>
+    <feature f0="i-1:p" f1="i:a"   f2="i+1:a"/>
+    <feature f0="i-2:p" f1="i-1:p" f2="i+1:a"/>
+    <feature f0="i-1:p" f1="i+1:a" f2="i+2:a"/>
+
+    <!-- affix features -->
+    <feature f0="i:pf2"/>
+    <feature f0="i:pf3"/>
+
+    <feature f0="i:sf1"/>
+    <feature f0="i:sf2"/>
+    <feature f0="i:sf3"/>
+    <feature f0="i:sf4"/>
+
+    <!-- orthographic features -->
+    <feature f0="i:orth"/>
+
+    <!-- binary features -->
+    <feature f0="i:b0" note="input is the first token"/>
+    <feature f0="i:b1" note="input is the last  token"/>
+</feature_template>
+```
