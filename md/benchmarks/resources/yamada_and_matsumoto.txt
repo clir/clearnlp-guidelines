@@ -1,0 +1,26 @@
+NP	r POS NN NNP NNPS NNS;r NX;r JJR;r CD;r JJ;r JJS;r RB;r QP;r NP;r
+ADJP	r NNS;r QP;r NN;r $;r ADVP;r JJ;r VBN;r VBG;r ADJP;r JJR;r NP;r JJS;r DT;r FW;r RBR;r RBS;r SBAR;r RB;r
+ADVP	l RB;l RBR;l RBS;l FW;l ADVP;l TO;l CD;l JJR;l JJ;l IN;l NP;l JJS;l NN;l
+CONJP	l CC;l RB;l IN;l
+FRAG	l
+INTJ	r
+LST	l LS;l :;l
+NAC	r NN NNS NNP NNPS;r NP;r NAC;r EX;r $;r CD;r QP;r PRP;r VBG;r JJ;r JJS;r JJR;r ADJP;r FW;r
+PP	l IN;l TO;l VBG;l VBN;l RP;l FW;l
+PRN	r
+PRT	l RP;l
+QP	r $;r IN;r NNS;r NN;r JJ;r RB;r DT;r CD;r NCD;r QP;r JJR;r JJS;r
+RRC	l VP;l NP;l ADVP;l ADJP;l PP;l
+S	r TO;r IN;r VP;r S;r SBAR;r ADJP;r UCP;r NP;r
+SBAR	r WHNP;r WHPP;r WHADVP;r WHADJP;r IN;r DT;r S;r SQ;r SINV;r SBAR;r FRAG;r
+SBARQ	r SQ;r S;r SINV;r SBARQ;r FRAG;r
+SINV	r VBZ;r VBD;r VBP;r VB;r MD;r VP;r S;r SINV;r ADJP;r NP;r
+SQ	r VBZ;r VBD;r VBP;r VB;r MD;r VP;r SQ;r
+UCP	l
+VP	l VBD;l VBN;l MD;l VBZ;l VB;l VBG;l VBP;l VP;l ADJP;l NN;l NNS;l NP;l
+WHADJP	r CC;r WRB;r JJ;r ADJP;r
+WHADVP	l CC;l WRB;l
+WHNP	r WDT;r WP;r WP$;r WHADJP;r WHPP;r WHNP;r
+WHPP	l IN;l TO;l FW;l
+NX	r POS NN NNP NNPS NNS;r NX;r JJR;r CD;r JJ;r JJS;r RB;r QP;r NP;r
+X	r

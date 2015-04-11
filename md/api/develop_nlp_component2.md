@@ -1,9 +1,5 @@
 # Add Components to ClearNLP
 
-
-* Create a package for the component.
-* 
-
 ## Setup
 
 In order to add any additional component to ClearNLP, you will have to clone the entire clearnlp repo to your local machine.
