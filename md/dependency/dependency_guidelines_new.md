@@ -5,7 +5,7 @@
 | ACOMP         | Adjectival complement         | |
 | ADVCL         | Adverbial clause modifier     |  |
 | ADVMOD        | Adverbial modifier            |  |
-| [AGENT](#Agent)         | AGENT                         |  |
+| [AGENT](#agent)         | AGENT                         |  |
 | AMOD          | Adjectival modifier           |   |
 | APPOS         | Appositional modifier         | |
 | ATTR          | Attribute                     |   |
