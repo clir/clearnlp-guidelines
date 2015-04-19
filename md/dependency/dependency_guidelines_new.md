@@ -30,7 +30,7 @@
 | MARK          | Marker                            | 1.0.0 |
 | META          | Meta modifier                     | 1.0.0 |
 | NEG           | Negation modifier                 | 1.0.0 |
-| NMOD          | Modifier of nominal               | 1.0.0 |
+| NOUNMOD       | Modifier of nominal               | 3.0.3 |
 | NPMOD         | Noun phrase as adverbial modifier | 3.0.3 |
 | NSUBJ         | Nominal subject                   | 1.0.0 |
 | NSUBJPASS     | Nominal subject (passive)         | 1.0.0 |
@@ -45,7 +45,7 @@
 | PREP          | Prepositional modifier            | 1.0.0 |
 | PRT           | Particle                          | 1.0.0 |
 | PUNCT         | Punctuation                       | 1.0.0 |
-| QMOD          | Modifier of quantifier            | 3.0.3 |
+| QUANTMOD      | Modifier of quantifier            | 1.0.0 |
 | RELCL         | Relative clause modifier          | 3.0.3 |
 | ROOT          | Root                              | 1.0.0 |
 | XCOMP         | Open clausal complement           | 1.0.0 |
@@ -63,10 +63,10 @@
 | IOBJ          | Indirect object                   | 3.0.3 | Replaced to `dative`   |
 | NUM           | Number modifier                   | 3.0.3 | Replaced to `nummod`   |
 | NUMBER        | Number compound modifier          | 3.0.3 | Replaced to `compound` |
+| NMOD          | Modifier of nominal               | 3.0.3 | Replaced to `nounmod` |
 | NN            | Noun compound modifier            | 3.0.3 | Replaced to `compound` |
 | NPADVMOD      | Noun phrase as adverbial modifier | 3.0.3 | Replaced to `npmod`    |
 | POSSESSIVE    | Possessive modifier               | 3.0.3 | Replaced to `case`     |
-| QUANTMOD      | Modifier of quantifier            | 3.0.3 | Replaced to `qmod`     |
 | RCMOD         | Relative clause modifier          | 3.0.3 | Replaced to `relcl`    |
 
 
