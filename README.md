@@ -31,7 +31,6 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 
 ## Formats
 
-* [Configuraiton format](md/formats/configuration_format.md).
 * [Feature template](md/formats/feature_template.md).
 * [Headrule format](md/formats/headrule_format.md).
 * [Data format](md/formats/data_format.md).
