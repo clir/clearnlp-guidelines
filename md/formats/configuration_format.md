@@ -9,36 +9,32 @@
 
 The following shows a sample configuration file for decoding: [config_decode.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_decode.xml).
 
-	<configuration>
-	    <language>english</language>
+```
+<configuration>
+    <language>english</language>
 
-	    <model>
-	        <pos>general-en-pos.xz</pos>
-	        <dep>general-en-dep.xz</dep>
-	    </model>
+    <reader type="raw"/>
 
-	    <reader type="raw">
-	    </reader>
+    <global>
+        <distributional_semantics>brown-rcv1.clean.tokenized-CoNLL03.txt-c1000-freq1.txt.xz</distributional_semantics>
+        <distributional_semantics>model-2030000000.LEARNING_RATE=1e-09.EMBEDDING_LEARNING_RATE=1e-06.EMBEDDING_SIZE=100.txt.xz</distributional_semantics>
+        <distributional_semantics>hlbl_reps_clean_2.50d.rcv1.clean.tokenized-CoNLL03.case-intact.txt.xz</distributional_semantics>
+        <named_entity_dictionary>general-en-ner-dict.xz</named_entity_dictionary>
+    </global>
 
-	    <reader type="line">
-	    </reader>
+    <model>
+        <pos>general-en-pos.xz</pos>
+        <dep>general-en-dep.xz</dep>
+        <ner>general-en-ner.xz</ner>
+    </model>
 
-	    <reader type="tsv">
-	        <column index="1" field="id"/>
-	        <column index="2" field="form"/>
-	        <column index="3" field="lemma"/>
-	        <column index="4" field="pos"/>
-	        <column index="5" field="feats"/>
-	        <column index="6" field="headId"/>
-	        <column index="7" field="deprel"/>
-	        <column index="8" field="sheads"/>
-	        <column index="9" field="nament"/>
-	    </reader>
-    
-	    <dep>
-	        <root_label>root</root_label>
-	    </dep>
-	</configuration>
+    <dep>
+        <root_label>root</root_label>
+        <beam_size>1</beam_size>
+    </dep>
+</configuration>
+
+```
 	
 The following describes the specification of each element.
 
@@ -48,7 +44,6 @@ The following describes the specification of each element.
 | `<model>` | Specifies the model file of each component.<ul><li>See [NLPMode](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/component/utils/NLPMode.java) for all supported components.</li><li>See [How to add models](../quick_start/models.md) for more details about the model files.</li></ul> |
 | `<reader>` | Specifies the data format of the input files.<ul><li>`type` specifies the type of the [data format](../formats/data_format.md):<br>&#9702; `raw`: accepts texts in any format.<br>&#9702; `line`: requires each sentence to be in one line.<br>&#9702; `tsv `: requires each field to be in one column delimited by tabs.</li><li>When `tsv ` is used, `<column>` must be specified.<br>&#9702; `index` specifies the index of the field, starting at 1.<br>&#9702; `field` specifies the name of the field.<br>&nbsp;&nbsp;&nbsp;&#8226; `id`: token ID.<br>&nbsp;&nbsp;&nbsp;&#8226; `form`: word form.<br>&nbsp;&nbsp;&nbsp;&#8226; `lemma`: lemma.<br>&nbsp;&nbsp;&nbsp;&#8226; `pos`: part-of-speech tag.<br>&nbsp;&nbsp;&nbsp;&#8226; `feats`: extra features.<br>&nbsp;&nbsp;&nbsp;&#8226; `headId`: head token ID.<br>&nbsp;&nbsp;&nbsp;&#8226; `deprel`: dependency label.<br>&nbsp;&nbsp;&nbsp;&#8226; `sheads`: semantic heads.<br>&nbsp;&nbsp;&nbsp;&#8226; `nament`: named entity tag.</li></ul> |
 | `<dep>` | Specifies the configuration of dependency parsing.<ul><li>`root_label`: label of the root node.</li></ul> |
-
 
 ## Training
 
@@ -94,6 +89,11 @@ The following describes the specification of each element.
 | :-----: | :---------- |
 | `<dep>` | Specifies the configuration of dependency parsing.<ul><li>`evaluate_punctuation`: if `true`, evaluate punctuation during development.</li><li>`root_label`: label of the root node.</li></ul> |
 | `<bootstraps>` | if `true`, use bootstrap iterations for training sequences. | 
+
+`<global_lexica>` specifies the lexicons used globally across different components.
+
+ * `distributional_semantics`: distributional lexicons (e.g., brown clusters, word embeddings).
+ * `named_entity_dictionary`: named entity dictionary.
 
 `<trainer>` specifies the training algorithm and its parameters.
 

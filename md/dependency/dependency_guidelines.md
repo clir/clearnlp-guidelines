@@ -1,58 +1,263 @@
 # Emory Dependency Labels
 
-| Label  | Description  | Example |
-|:------------- |:---------------:| :-------------|
-| ACOMP     | Adjectival complement | Adjective phrase that modifies the head of a `VP` \| `SINV` \| `SQ`, that is usually a verb. Example: "She looks so beautiful" `so beautiful` is the ACOMP of `looks`  |
-| ADVCL      | Adverbial clause modifier| Acts like an adverbial modifier (ADVMOD) A subordinate clause or open clause is considered an ADVCL if it doesn't satisfy an other dependency relation. Example: "She came to see me" `to see me` is the ADVCL of `came`|
-| ADVMOD | Adverbial modifier | Adverb of adverb phrase that modifies the meaning of another word. Other grammatical categories can also be ADVMOD if they modify adjectives. Example: "I did not know her" `not` is a ADVMOD of `know`  |
-| AGENT | AGENT |  Complement of a passive verb that is the surface subject of its active form. Example: "The car was bought by John." `by John` is the agent that is a complement of `bought` (The prep `by` is included as part of AGENT)  |
-| AMOD | Adjectival modifier |  Adjective or adjective phrase that modifies the meaning of another word. Example: "A beautiful girl" `beautiful` is AMOD to `girl` |
-| APPOS | Appositional modifier  | APPOS of an NMP \| NP is a noun phrase immediately preceded by another noun phrase, which gives additional information to its preceding noun phrase. Example: "John my brother" `my brother` is the APPOS of `John`|
-| ATTR | Attribute | Noun phrase that is a non-VP predicate that usually follows a copula verb. Example: "This product is a global brand" `a global brand` is the ATTR of `is`  |
-| AUX | Auxiliary |Modal verb that gives further information about the main verb. Example: "I am going to meet her tomorrow" `am going to` is the AUX of `meet` (The prep `to` is considered an AUX)|
-| AUXPASS | Auxiliary (passive) | An auxiliary verb, `be`, `become`, or `get`, that modifies a passive verb. Example: "We will `get` married." |
-| CC | Coordinating conjunction | Dependent of the leftmost conjunct in coordination. Example: "John, Mary, and Sam" `and` is the CC of `John` |
-| CCOMP | Clausal complement |  Clause with an internal subject that modifies `ADJP`\| `ADVP` \| `NML` \| `NP` \| `WHNP` \| `VP` \| `SINV` \| SQ. Example: "She left no matter how I felt" `how I felt` is the CCOMP of `matter` |
-| COMPLM | Complementizer |  Subordinating conjunction, if, that, or whether, that introduces a clausal complement. A COMPLM is assigned when a CCOMP is found. Example: "She said that she wanted to go" `that` is the COMPLM of `wanted` |
-| CONJ | Conjunct | Dependent of the leftmost conjunct in coordination. Leftmost conjunct becomes head of a coordinated phrase. Example: "John, Mary, and Sam" `Mary` and `Sam` are both conjunctions of `John`|
-| CSUBJ | Clausal subject | Clause in the subject position of an active verb. Example: "What I said was true" `What I said` is the CSUBJ of active verb `was`  |
-| CSUBJPASS | Clausal subject (passive) | Clause in the subject position of a passive verb. Example: "Whoever misbehaves will be dismissed." `Whoever misbehaves` is the CSUBJPASS of passive verb `dismissed`   |
-| DEP | Unclassified dependent |  Dependent that does not satisfy conditions for any other dependency.  |
-| DET | Determiner | Word whose POS tag is DT \| WDT \| WP that modifies the head of a noun phrase. Example: "The U.S. military" `The` is the DET of `military`|
-| DOBJ | Direct Object | Noun phrase that is the accusative object of a (di)transitive verb. Example: "She bought me these books" `these books` is the DOBJ of `bought` |
-| EXPL | Expletive | Existential `there` in subject position. Example: "`There` was an explosion" |
-| HMOD | Modifier in hyphenation |  Constituent preceding a hyphen that modifies constituent following the hyphen. Example: "New-York Times" `New` modifies `York`|
-| HYPH | Hyphen | Modifies a constituent following the hyphen. Example: "New-York Times" `-` modifies `York`|
-| INFMOD | Infinitival modifier | Infinitive clause or phrase that modifies the head of a noun phrase. Example: "I have too much homework to do" `to do` is the INFMOD of `homework` |
-| INTJ | Interjection |  Expression made by the speaker of an utterance. Example: "I `um` will throw a party"  |
-| IOBJ | Indirect object | Noun phrase that is dative of a ditransitive verb. Example: "She bought me these books" `me` is the IOBJ of `bought` |
-| MARK | Marker | Subordinating conjunction that introduces an adverbial clause modifier. Example: (e.g., although, because, while) "She came because she liked me" "`because` she liked me" is the MARK of `liked`  |
-| META | Meta modifier |  Code, embedded, or meta information that is randomly inserted in a phrase or clause. Example: `Applause` Thank you |
-| NEG | Negation modifier | Adverb that gives negative meaning to its head. Example: "She decided not to come" `not` is the NEG of `come`  |
-| NMOD | Modifier of nominal | Any unclassified dependent that modifies the head of a noun phrase.|
-| NN | Noun compound modifier | Any noun that modifies the head of a noun phrase. Example: "The US military" `US` is the NN of `military` |
-| NPADVMOD | Noun phrase as ADVMOD |  Noun phrase that acts like an adverbial modifier. A noun phrase modifying either an adjective or an adverb is also considered NPADVMOD. Example: "I met her last week" `last week` is the NPADVMOD of `met` |
-| NSUBJ | Nominal subject | Non-clausal constituent in the subject position of an active verb. Example: "Earlier was better" `Earlier` is the NSUBJ of the active verb `was` |
-| NSUBJPASS | Nominal subject (passive) | Non-clausal constituent in the subject position of an passive verb. Example: "We will get married" `We` is the NSUBJPASS of the passive verb `married` |
-| NUM | Number modifier | Any number of quantifier phrase that modifies the head of a noun phrase. Example: "14 degress" `14` is the NUM of `degrees`|
-| NUMBER | Number compound modifier | A cardinal number that modifies the head of a quantifier phrase. Example: "Seven million dollars" `Seven` is a NUMBER that modifies `million` |
-| OPRD | Object predicate |  A non-VP predicate in a small clause that functions like the predicate of an object. Example: "She calls me her friend" `her friend` is the OPRD and `me` is DOBJ of `calls` |
-| PARATAXIS | Parataxis | Embedded chunk, often but not necessarily surrounded by parenthetical notations which gives side information to its head. Example: "She, I mean, Mary was here" `I mean` is PARATAXIS to `was` |
-| PARTMOD | Participal modifier | A clause or phrase whose head is a verb in a participial form (e.g., gerund, past participle) that modifies the head of a noun phrase. Example: "I went to the party hosted by her" `hosted by her` is the PARTMOD of `party`  |
-| PCOMP | Complement of preposition | Any dependent that is not a `POBJ` but modifies the head of a prepositional phrase. Example: "I agree with what you said" `what you said` is the PCOMP of `with`|
-| POBJ | Object of preposition | Noun phrase that modifies the head of a prepositional phrase which is usually a preposition but can be a verb in a participial form such as `VBG`. Example: "On the table" `the table` is the POBJ of `On`  |
-| POSS | Possession modifier |  Either a possessive determiner (`PRP$`) or a NML \| NP \| WHNP containing a possessive ending that modifies head of a `ADJP` \| `NML` \| `NP` \| `QP` \| `WHNP` Example: "I bought his car"    `his` is POSS of `car` |
-| POSSESSIVE | Possessive modifier | A word token whose POS tag is `POS` that modifies the head of a noun phrase. Example: "John's car" `'s` is POSSESSIVE of `John` |
-| PRECONJ | Pre-correlative conjunction |  The first part of a correlative conjunction that becomes a dependent of the first conjunct in the coordination. Example: "Either John or Mary" `Either` is the PRECONJ of `John` |
-| PREDET | Predeterminer | A word token whose POS tag is `PDT` that modifies the head of a noun phrase. Example: "Such a beautiful woman" `Such` is the PREDET of `woman`|
-| PREP | Prepositional modifier |  Any prepositional phrase that modifies the meaning of its head. Example: "Or just give it to me" `to me` is a PREP of `give`|
-| PRT | Particle |  Preposition or phrasal verb that forms a verb-particle construction. Example: "Shut down the machine" `down` is the PRT of `Shut` |
-| PUNCT | Punctuation | Any punctuation is PUNCT |
-| QUANTMOD | Quantifier phrase modifier | Dependent of the head of a quantifier phrase. Example: "Five to six" `Five` is a QUANTMOD to `six` and `to` is also a QUANTMOD to `six` |
-| RCMOD | Relative clause modifier |  Either a relative clause or a reduced relative clause that modifies the head of `NML` \| `NP` \| `WHNP`. Example: "I bought the car that I wanted" `that I wanted` is the RCMOD of `car` |
-| ROOT | Root | Root of the tree that does not depend on any node of the tree but the artificial root node whose ID is 0. A tree can have multiple roots if top constituents contains more than on child in the original constituent tree.|
-| XCOMP | Open clausal complement |  Clause without an internal subject that modifies the head of an `ADJP` \| `ADVP` \| `VP` \| `SINV` \| `SQ`. Example: "I am ready to go" `to go` is the XCOMP of `ready`|
+## Current Labels
+
+| Label         | Description                       | Since |
+|:------------- |:----------------------------------|:-----:|
+| ACL           | Clausal modifier of noun          | 3.0.3 |
+| ACOMP         | Adjectival complement             | 1.0.0 |
+| ADVCL         | Adverbial clause modifier         | 1.0.0 |
+| ADVMOD        | Adverbial modifier                | 1.0.0 |
+| AGENT         | Agent                             | 1.0.0 |
+| AMOD          | Adjectival modifier               | 1.0.0 |
+| APPOS         | Appositional modifier             | 1.0.0 |
+| ATTR          | Attribute                         | 1.0.0 |
+| AUX           | Auxiliary                         | 1.0.0 |
+| AUXPASS       | Auxiliary (passive)               | 1.0.0 |
+| CASE          | Case marker                       | 3.0.3 |
+| CC            | Coordinating conjunction          | 1.0.0 |
+| CCOMP         | Clausal complement                | 1.0.0 |
+| COMPOUND      | Compound modifier                 | 3.0.3 |
+| CONJ          | Conjunct                          | 1.0.0 |
+| CSUBJ         | Clausal subject                   | 1.0.0 |
+| CSUBJPASS     | Clausal subject (passive)         | 1.0.0 |
+| DATIVE        | Dative                            | 3.0.3 |
+| DEP           | Unclassified dependent            | 1.0.0 |
+| DET           | Determiner                        | 1.0.0 |
+| DOBJ          | Direct Object                     | 1.0.0 |
+| EXPL          | Expletive                         | 1.0.0 |
+| INTJ          | Interjection                      | 1.0.0 |
+| MARK          | Marker                            | 1.0.0 |
+| META          | Meta modifier                     | 1.0.0 |
+| NEG           | Negation modifier                 | 1.0.0 |
+| NOUNMOD       | Modifier of nominal               | 3.0.3 |
+| NPMOD         | Noun phrase as adverbial modifier | 3.0.3 |
+| NSUBJ         | Nominal subject                   | 1.0.0 |
+| NSUBJPASS     | Nominal subject (passive)         | 1.0.0 |
+| NUMMOD        | Number modifier                   | 3.0.3 |
+| OPRD          | Object predicate                  | 1.0.0 |
+| PARATAXIS     | Parataxis                         | 1.0.0 |
+| PCOMP         | Complement of preposition         | 1.0.0 |
+| POBJ          | Object of preposition             | 1.0.0 |
+| POSS          | Possession modifier               | 1.0.0 |
+| PRECONJ       | Pre-correlative conjunction       | 1.0.0 |
+| PREDET        | Pre-determiner                    | 1.0.0 |
+| PREP          | Prepositional modifier            | 1.0.0 |
+| PRT           | Particle                          | 1.0.0 |
+| PUNCT         | Punctuation                       | 1.0.0 |
+| QUANTMOD      | Modifier of quantifier            | 1.0.0 |
+| RELCL         | Relative clause modifier          | 3.0.3 |
+| ROOT          | Root                              | 1.0.0 |
+| XCOMP         | Open clausal complement           | 1.0.0 |
 
 
+## Deprecated Labels
+
+| Label         | Description                       | Since | Notes |
+|:------------- |:----------------------------------|:-----:|:------|
+| COMPLM        | Complementizer                    | 3.0.0 | Replaced to `mark`     |
+| INFMOD        | Infinitival modifier              | 3.0.0 | Replaced to `acl`      |
+| PARTMOD       | Participal modifier               | 3.0.0 | Replaced to `acl`      |
+| HMOD          | Modifier in hyphenation           | 3.0.3 | Replaced to `compound` |
+| HYPH          | Hyphen                            | 3.0.3 | Replaced to `punct` |
+| IOBJ          | Indirect object                   | 3.0.3 | Replaced to `dative`   |
+| NUM           | Number modifier                   | 3.0.3 | Replaced to `nummod`   |
+| NUMBER        | Number compound modifier          | 3.0.3 | Replaced to `compound` |
+| NMOD          | Modifier of nominal               | 3.0.3 | Replaced to `nounmod` |
+| NN            | Noun compound modifier            | 3.0.3 | Replaced to `compound` |
+| NPADVMOD      | Noun phrase as adverbial modifier | 3.0.3 | Replaced to `npmod`    |
+| POSSESSIVE    | Possessive modifier               | 3.0.3 | Replaced to `case`     |
+| RCMOD         | Relative clause modifier          | 3.0.3 | Replaced to `relcl`    |
 
 
+## Subjects
+
+### Nominal subject
+
+A nominal subject (`nsubj`) is a non-clausal constituent in the subject position of an active verb.
+
+### Nominal subject (passive)
+
+A nominal passive subject (`nsubjpass`) is a non-clausal constituent in the subject position of a passive verb.
+
+### Clausal subject
+
+A clausal subject (`csubj`) is a clause in the subject position of an active verb.
+
+### Clausal subject (passive)
+
+A clausal passive subject (`csubjpass`) is a clause in the subject position of a passive verb. 
+
+### Agent
+
+An agent (`agent`) is the complement of a passive verb that is the surface subject of its active form.
+
+### Expletive
+
+An expletive (`expl`) is an existential there in the subject position.
+
+## Objects
+
+### Direct object
+
+A direct object (`dobj`) is a noun phrase that is the accusative object of a (di)transitive verb.
+
+### Dative
+
+A dative (`dative`) is a nominal or prepositional object of dative-shifting verb.
+
+### Attribute
+
+An attribute (`attr`) is a noun phrase that is a non-VP predicate usually following a copula verb.
+
+### Object predicate
+
+An object predicate (`oprd`) is a non-VP predicate in a small clause that functions like the predicate of an object.
+
+## Complements
+
+### Clausal complement
+
+A clausal complement (`ccomp`) is a clause with an internal subject that modifies the head of an `ADJP|ADVP|NML|NP|WHNP|VP|SINV|SQ`. 
+
+### Open clausal complement
+
+An open clausal complement (`xcomp`) is a clause without an internal subject that modifies the head of an `ADJP|ADVP|VP|SINV|SQ`.
+
+### Adjectival complement
+
+An adjectival complement (`acomp`) is an adjective phrase that modifies the head of a `VP|SINV|SQ`, that is usually a verb.
+
+## Nominals
+
+### Appositional modifier
+
+An appositional modifier (`appos`) of an `NML|NP` is a noun phrase immediately preceded by another noun phrase, which gives additional information to its preceding noun phrase.
+
+### Clausal modifier
+
+A finite or non-finite clausal modifier (`acl`) is either an infinitival modifier is an infinitive clause or phrase that modifies the head of a noun phrase, or a participial modifier is a clause or phrase whose head is a verb in a participial form (e.g., gerund, past participle) that modifies the head of a noun phrase, or a complement.
+
+### Releative clause modifier
+
+A relative clause modifier (`relcl`) is a either relative clause or a reduced relative clause that modifies the head of an `NML|NP|WHNP`.
+
+### Determiner
+
+A determiner (`det`) is a word token whose pos tag is `DT|WDT|WP` that modifies the head of a noun phrase.
+
+### Pre-determiner
+
+A predeterminer (`predet`) is a word token whose pos tag is PDT that modifies the head of a noun phrase.
+
+### Numeric modifier
+
+A numeric modifier (`nummod`) is any number or quantifier phrase that modifies the head of a noun phrase.
+
+### Adjectival modifier
+
+An adjectival modifier (`amod`) is an adjective or an adjective phrase that modifies the meaning of another word, usually a noun.
+
+### Possession modifier
+
+A possession modifier (`poss`) is either a possessive determiner (PRP$) or a NML|NP|WHNP containing a possessive ending that modifies the head of a ADJP|NML|NP|QP|WHNP.
+
+### Modifier of nominal
+
+A modifier of nominal (`nmod`) is any unclassified dependent that modifies the head of a noun phrase.
+
+## Adverbials
+
+### Adverbial modifier
+
+An adverbial modifier (`advmod`) is an adverb or an adverb phrase that modifies the meaning of another word.
+
+### Adverbial clause modifier
+
+An adverbial clause modifier (`advcl`) is a clause that acts like an adverbial modifier.
+
+## Negation modifier
+
+A negation modifier (`neg`) is an adverb that gives negative meaning to its head.
+
+## Noun phrase as adverbial modifier
+
+An adverbial noun phrase modifier (`npmod`) is a noun phrase that acts like an adverbial modifier.
+
+## Prepositions
+
+### Object of a preposition
+
+An object of a preposition (`pobj`) is a noun phrase that modifies the head of a prepositional phrase, which is usually a preposition but can be a verb in a participial form such as `VBG`.
+
+### Complement of a preposition
+
+A complement of a preposition (`pcomp`) is any dependent that is not a `pobj` but modifies the head of a prepositional phrase.
+
+## Coordination
+
+### Conjunct
+
+A conjunct (`conj`) is a dependent of the leftmost conjunct in coordination.
+
+### Coordinating conjunction
+
+A coordinating conjunction (`cc`) is a dependent of the leftmost conjunct in coordination.
+
+### Pre-correlative conjunction
+
+A pre-correlative conjunction (`preconj`) is the first part of a correlative conjunction that becomes a dependent of thefirst conjunct in coordination.
+
+### Prepositional modifier
+
+A prepositional modifier (`prep`) is any prepositional phrase that modifies the meaning of its head.
+
+## Auxiliaries
+
+### Auxiliary
+
+An auxiliary (`aux`) is an auxiliary or modal verb that gives further information about the main verb (e.g., tense, aspect).
+
+### Auxiliary (passive)
+
+A passive auxiliary (`auxpass`) is an auxiliary verb, be, become, or get, that modifies a passive verb.
+
+## Compund words
+
+### Compound
+
+A compound (`compound`) is either a noun modifying the head of noun phrase, a number modifying the head of quantifier phrase, or a hyphenated word (or a preposition modifying the head of the prepositioanl phrase).
+
+### Particle
+
+A particle (`prt`) is a preposition in a phrasal verb that forms a verb-particle construction.
+
+### Case marker
+
+A case marker (`case`) is either a possessive marker, ...
+
+### Marker
+
+A marker (`mark`) is either a subordinating conjunction (e.g., although, because, while) that introduces an adverbial clause modifier, or a subordinating conjunction, if, that, or whether, that introduces a clausal complement.
+
+## Miscellaneous
+
+### Unclassified dependent
+
+An unclassified dependent (`dep`) is a dependent that does not satisfy conditions for any other dependency.
+
+### Meta modifier
+
+A meta modifier (`meta`) is code (1), embedded (2), or meta (3) information that is randomly inserted in a phrase￼￼￼or clause.
+
+### Parenthetical modifier
+
+A parenthetical modifier (`parataxis`) is an embedded chunk, often but not necessarily surrounded by parentheticalnotations (e.g,. brackets, quotes, commas, etc.), which gives side information to its head.
+
+### Punctuation
+
+Any punctuation (`punct`) is assigned the dependency label PUNCT.
+
+### Root
+
+A root (`root`) is the root of a tree that does not depend on any node in the tree but the artificial root node.

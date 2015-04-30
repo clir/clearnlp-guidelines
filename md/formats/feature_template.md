@@ -53,4 +53,5 @@ The following shows our built-in feature templates (see [`FieldType`](https://gi
 | `sc` | The subcategorization,  `l|r|a` coming after `sc` reprensents the left, right, or both subcategorization, and `m|p|n|d` represents the field value accordingly.<br>&#8226; e.g,`sclp` represents the subcategoziation of part-of-speech tags in the left dependents.<br>&#8226;[`getSubcategorization(DirectionType, FieldType)`](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/dependency/DEPNode.java). |
 | `ds` | The set of dependent fields, `m|p|n|d` coming after `ds` represents the field value accordingly. |
 | `ds2` | The set of grand-dependent fields, `m|p|n|d` coming after `ds` represents the field value accordingly. |
+| `dsw` | The set of word-level distributional semnatic features,`#` coming after `dws` represents the global lexicon type.<br>&#8226;e.g., `dsw0`&#8594; features derived from the first global lexicon. |
 | `orth` | The set of orthographic features.<br>&#8226;[`OrthographicType`](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/feature/common/OrthographicType.java). |

@@ -7,12 +7,12 @@
 
 ## Decoding
 
-The following shows the command to run the NLP pipeline for part-of-speech tagging, morphological analysis, dependency parsing, or semantic role labeling: `pos`, `morph`, `dep`, `srl`.
+The following shows the command to run the NLP pipeline for part-of-speech tagging, morphological analysis, dependency parsing, named entity recognition, or semantic role labeling: `pos`, `morph`, `dep`, `ner`, `srl`.
 
 ```
 java edu.emory.clir.clearnlp.bin.NLPDecode -mode <mode> -c <filename> -i <filepath> [-ie <string> -oe <string>]
 
--mode <mode>  : pos|morph|dep|srl
+-mode <mode>  : pos|morph|dep|ner|srl
 -c <filename> : configuration file (required)
 -i <filepath> : input path (required)
 -ie <string>  : input file extension (default: *)
@@ -27,7 +27,7 @@ java edu.emory.clir.clearnlp.bin.NLPDecode -mode <mode> -c <filename> -i <filepa
 The following command takes the input file ([clearnlp.txt](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt)) and the configuration file ([config_decode.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_decode.xml)), performs the NLP pipeline for dependency parsing (`dep`), and generates the output file ([clearnlp.txt.cnlp](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt.cnlp)).
 
 ```
-$ java -Xmx4g -XX:+UseConcMarkSweepGC java edu.emory.clir.clearnlp.bin.NLPDecode -mode dep -c config_decode.xml -i clearnlp.txt
+$ java -Xmx10g -XX:+UseConcMarkSweepGC java edu.emory.clir.clearnlp.bin.NLPDecode -mode dep -c config_decode.xml -i clearnlp.txt
 Loading dependency parsing models.
 Loading part-of-speech tagging models.
 Decoding:
@@ -69,3 +69,4 @@ $ java -Xmx10g -XX:+UseConcMarkSweepGC java edu.emory.clir.clearnlp.bin.NLPTrain
 
 * Make sure to use the [`-XX:+UseConcMarkSweepGC`](http://www.oracle.com/technetwork/java/tuning-139912.html) option for JVM, which reduces the memory usage into a half.
 * Add the log4j configuration file ([log4j.properties](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/log4j.properties)) to your classpath.
+I

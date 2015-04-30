@@ -1,5 +1,11 @@
 # Release Notes
 
+### Version 3.1.0 (5/1/2015)
+
+* The named entity recognizer is added, showing state-of-the-art accuracy on both CoNLL'03 and OntoNotes data; the paper is under submission.
+* [Statistical models](../quick_start/models.md) for the general domain are updated; the part-of-speech tagger and the dependency parser use features extracted from distributional semantics, which give more robust results on unseen data.
+* The dependency parser is trained on data converted by our new [dependency coversion](../dependency/dependency_guidelines.md), which adapts many concenpts from the [universal dependency structures](http://universaldependencies.github.io/docs/) and added useful labels such as `dative`.
+
 ### Version 3.0.2 (3/21/2015)
 
 * Arg4j argument documentation is updated.
