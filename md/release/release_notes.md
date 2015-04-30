@@ -1,23 +1,23 @@
 # Release Notes
 
-### Version 3.1.0 (4/30/2015)
+## Version 3.1.0 (4/30/2015)
 
-* The named entity recognizer is added, showing state-of-the-art accuracy on both CoNLL'03 and OntoNotes data; the paper is under submission.
-* [Statistical models](../quick_start/models.md) for the general domain are updated; the part-of-speech tagger and the dependency parser use features extracted from distributional semantics, which give more robust results on unseen data.
-* The dependency parser is trained on data converted by our new [dependency coversion](../dependency/dependency_guidelines.md), which adapts many concenpts from the [universal dependency structures](http://universaldependencies.github.io/docs/) and added useful labels such as `dative`.
+* A new component for named entity recognition is added, which shows state-of-the-art accuracy on both CoNLL'03 and OntoNotes data (a paper describing our approach is under submission).
+* All [statistical models](../quick_start/models.md) are upgraded; the part-of-speech tagger and the dependency parser use features extracted from distributional semantics, which give more robust results on unseen data.
+* The dependency parser is trained on data from our new [dependency coversion](../dependency/dependency_guidelines.md) adapting many concenpts from the [universal dependency structures](http://universaldependencies.github.io/docs/) and introducing some new useful labels such as `dative`.
 
-### Version 3.0.2 (3/21/2015)
+## Version 3.0.2 (3/21/2015)
 
 * Arg4j argument documentation is updated.
 * [Javadoc](http://nlp.mathcs.emory.edu/clearnlp/javadoc/) for [`DEPNode`](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/dependency/DEPNode.java) and [`DEPTree`](https://github.com/clir/clearnlp/blob/master/src/main/java/edu/emory/clir/clearnlp/dependency/DEPTree.java) are added.
 
-### Version 3.0.1 (3/17/2015)
+## Version 3.0.1 (3/17/2015)
 
 * Some debugging codes are stripped out.
 * Directory paths for staticial models are changed to the top level.
 * Minor changes in configuration classes due to the convenience of API calls.
 
-### Version 3.0.0 (3/15/2015)
+## Version 3.0.0 (3/15/2015)
 
 * ClearNLP is now developed by the [Center for Language and Information Research](http://nlp.mathcs.emory.edu) at [Emory University](http://emory.edu).
 * Our maven group ID is changed from `com.clearnlp` to `edu.emory.clir`.
@@ -31,5 +31,5 @@
 * Better documentation is provided at our [guidelines](https://github.com/clir/clearnlp-guidelines) project for more details about training, decoding, [javadoc](http://nlp.mathcs.emory.edu/clearnlp/javadoc/), etc.
 
 
-### Previous Versions
+## Previous Versions
 * Release notes for preivous versions are available [here](previous_notes.md).
