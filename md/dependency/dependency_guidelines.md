@@ -1,10 +1,10 @@
-# Emory Dependency Labels
+# ClearNLP Dependency Labels
 
 ## Current Labels
 
 | Label         | Description                       | Since |
 |:------------- |:----------------------------------|:-----:|
-| ACL           | Clausal modifier of noun          | 3.0.3 |
+| ACL           | Clausal modifier of noun          | 3.1.0 |
 | ACOMP         | Adjectival complement             | 1.0.0 |
 | ADVCL         | Adverbial clause modifier         | 1.0.0 |
 | ADVMOD        | Adverbial modifier                | 1.0.0 |
@@ -14,14 +14,14 @@
 | ATTR          | Attribute                         | 1.0.0 |
 | AUX           | Auxiliary                         | 1.0.0 |
 | AUXPASS       | Auxiliary (passive)               | 1.0.0 |
-| CASE          | Case marker                       | 3.0.3 |
+| CASE          | Case marker                       | 3.1.0 |
 | CC            | Coordinating conjunction          | 1.0.0 |
 | CCOMP         | Clausal complement                | 1.0.0 |
-| COMPOUND      | Compound modifier                 | 3.0.3 |
+| COMPOUND      | Compound modifier                 | 3.1.0 |
 | CONJ          | Conjunct                          | 1.0.0 |
 | CSUBJ         | Clausal subject                   | 1.0.0 |
 | CSUBJPASS     | Clausal subject (passive)         | 1.0.0 |
-| DATIVE        | Dative                            | 3.0.3 |
+| DATIVE        | Dative                            | 3.1.0 |
 | DEP           | Unclassified dependent            | 1.0.0 |
 | DET           | Determiner                        | 1.0.0 |
 | DOBJ          | Direct Object                     | 1.0.0 |
@@ -30,11 +30,11 @@
 | MARK          | Marker                            | 1.0.0 |
 | META          | Meta modifier                     | 1.0.0 |
 | NEG           | Negation modifier                 | 1.0.0 |
-| NOUNMOD       | Modifier of nominal               | 3.0.3 |
-| NPMOD         | Noun phrase as adverbial modifier | 3.0.3 |
+| NOUNMOD       | Modifier of nominal               | 3.1.0 |
+| NPMOD         | Noun phrase as adverbial modifier | 3.1.0 |
 | NSUBJ         | Nominal subject                   | 1.0.0 |
 | NSUBJPASS     | Nominal subject (passive)         | 1.0.0 |
-| NUMMOD        | Number modifier                   | 3.0.3 |
+| NUMMOD        | Number modifier                   | 3.1.0 |
 | OPRD          | Object predicate                  | 1.0.0 |
 | PARATAXIS     | Parataxis                         | 1.0.0 |
 | PCOMP         | Complement of preposition         | 1.0.0 |
@@ -46,7 +46,7 @@
 | PRT           | Particle                          | 1.0.0 |
 | PUNCT         | Punctuation                       | 1.0.0 |
 | QUANTMOD      | Modifier of quantifier            | 1.0.0 |
-| RELCL         | Relative clause modifier          | 3.0.3 |
+| RELCL         | Relative clause modifier          | 3.1.0 |
 | ROOT          | Root                              | 1.0.0 |
 | XCOMP         | Open clausal complement           | 1.0.0 |
 
@@ -58,16 +58,16 @@
 | COMPLM        | Complementizer                    | 3.0.0 | Replaced to `mark`     |
 | INFMOD        | Infinitival modifier              | 3.0.0 | Replaced to `acl`      |
 | PARTMOD       | Participal modifier               | 3.0.0 | Replaced to `acl`      |
-| HMOD          | Modifier in hyphenation           | 3.0.3 | Replaced to `compound` |
-| HYPH          | Hyphen                            | 3.0.3 | Replaced to `punct` |
-| IOBJ          | Indirect object                   | 3.0.3 | Replaced to `dative`   |
-| NUM           | Number modifier                   | 3.0.3 | Replaced to `nummod`   |
-| NUMBER        | Number compound modifier          | 3.0.3 | Replaced to `compound` |
-| NMOD          | Modifier of nominal               | 3.0.3 | Replaced to `nounmod` |
-| NN            | Noun compound modifier            | 3.0.3 | Replaced to `compound` |
-| NPADVMOD      | Noun phrase as adverbial modifier | 3.0.3 | Replaced to `npmod`    |
-| POSSESSIVE    | Possessive modifier               | 3.0.3 | Replaced to `case`     |
-| RCMOD         | Relative clause modifier          | 3.0.3 | Replaced to `relcl`    |
+| HMOD          | Modifier in hyphenation           | 3.1.0 | Replaced to `compound` |
+| HYPH          | Hyphen                            | 3.1.0 | Replaced to `punct` |
+| IOBJ          | Indirect object                   | 3.1.0 | Replaced to `dative`   |
+| NUM           | Number modifier                   | 3.1.0 | Replaced to `nummod`   |
+| NUMBER        | Number compound modifier          | 3.1.0 | Replaced to `compound` |
+| NMOD          | Modifier of nominal               | 3.1.0 | Replaced to `nounmod` |
+| NN            | Noun compound modifier            | 3.1.0 | Replaced to `compound` |
+| NPADVMOD      | Noun phrase as adverbial modifier | 3.1.0 | Replaced to `npmod`    |
+| POSSESSIVE    | Possessive modifier               | 3.1.0 | Replaced to `case`     |
+| RCMOD         | Relative clause modifier          | 3.1.0 | Replaced to `relcl`    |
 
 
 ## Subjects
