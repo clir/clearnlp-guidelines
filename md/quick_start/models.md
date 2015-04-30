@@ -10,12 +10,12 @@
 
 ## Dictionary
 
-The dictionary files are required by many components in ClearNLP.
+Dictionaries are required by several components in ClearNLP.  The general dictionary contains general morphology information and the global lexica contains knowledge-base as well as distributional semantics information.
 
 #### Without Maven
 
 * Download the following models and add them to your Java classpath.
- * Dictionary: [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar).
+ * General dictionary: [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar).
  * Global lexica: [clearnlp-global-lexica-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-global-lexica/3.0/clearnlp-global-lexica-3.0.jar).
 
  ```

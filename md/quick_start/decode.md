@@ -1,4 +1,4 @@
-# Decode
+# Decoding
 
 ## Command-Line
 
@@ -31,7 +31,7 @@ sample.txt
 ```
 
 * Make sure to use the [`-XX:+UseConcMarkSweepGC`](http://www.oracle.com/technetwork/java/tuning-139912.html) option for JVM, which reduces the memory usage into a half.
-* The named entity recognition pipleline takes about 9GB of RAM.  If you want to run only up to the dependency parsing pipeline, use [config\_decode_dep.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_decode_dep.xml) instead, which takes about 5GB of RAM.
+* If you want to run the named entity recognition pipeline, use [config\_decode_ner.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_decode_ner.xml) instead, which takes about 9GB of RAM.
 * Add the log4j configuration file ([log4j.properties](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/log4j.properties)) to your classpath.
 * Use our [visualization tool](http://nlp.mathcs.emory.edu/clearnlp/demo/demo.html) to view the output.
 
