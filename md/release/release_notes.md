@@ -1,5 +1,10 @@
 # Release Notes
 
+## Version 3.1.1 (5/7/2015)
+
+* Word embedding lexicons are removed from the global lexica, which didn't add much accuracy but took so much RAM space.  Furthermore, the gazetteers for named entity recognition are now separated from the global lexica for better modulation (see [models](../quick_start/models.md) for more details).
+* The named entity recognition model is updated. See [`pom.xml`](https://github.com/clir/clearnlp-tutorial/blob/master/pom.xml) for all updated dependencies.
+
 ## Version 3.1.0 (4/30/2015)
 
 * A new component for named entity recognition is added, which shows state-of-the-art accuracy on both CoNLL'03 and OntoNotes data (a paper describing our approach is under submission).

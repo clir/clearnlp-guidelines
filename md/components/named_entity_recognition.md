@@ -27,9 +27,7 @@ The following shows a sample configuration file: [config\_train_ner.xml](https:/
 
     <global>
         <distributional_semantics>brown-rcv1.clean.tokenized-CoNLL03.txt-c1000-freq1.txt.xz</distributional_semantics>
-        <distributional_semantics>model-2030000000.LEARNING_RATE=1e-09.EMBEDDING_LEARNING_RATE=1e-06.EMBEDDING_SIZE=100.txt.xz</distributional_semantics>
-        <distributional_semantics>hlbl_reps_clean_2.50d.rcv1.clean.tokenized-CoNLL03.case-intact.txt.xz</distributional_semantics>
-        <named_entity_dictionary>general-en-ner-dict.xz</named_entity_dictionary>
+        <named_entity_dictionary>general-en-ner-gazetteer.xz</named_entity_dictionary>
     </global>
 
 	<ner>
@@ -105,9 +103,6 @@ The following shows a sample feature template file: [feature\_en_ner.xml](https:
 	<feature f0="i+1:dsw0"/>
 	<feature f0="i+2:dsw0"/>
 	<feature f0="i-2:dsw0"/>
-
-	<feature f0="i:dsw1"/>
-	<feature f0="i:dsw2"/>
 
     <feature f0="i_h:m"/>
     <feature f0="i_h:p"/>

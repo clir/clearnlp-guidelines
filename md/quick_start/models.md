@@ -16,11 +16,11 @@ Dictionaries are required by several components in ClearNLP.  The general dictio
 
 * Download the following models and add them to your Java classpath.
  * General dictionary: [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar).
- * Global lexica: [clearnlp-global-lexica-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-global-lexica/3.0/clearnlp-global-lexica-3.0.jar).
+ * Global lexica: [clearnlp-global-lexica-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-global-lexica/3.1/clearnlp-global-lexica-3.1.jar).
 
  ```
  export CLASSPATH=clearnlp-dictionary-3.0.jar:\\
-                     clearnlp-global-lexica-3.0.jar:.
+                     clearnlp-global-lexica-3.1.jar:.
  ```
 
 #### With Maven
@@ -36,8 +36,13 @@ Dictionaries are required by several components in ClearNLP.  The general dictio
  <dependency>
       <groupId>edu.emory.clir</groupId>
       <artifactId>clearnlp-global-lexica</artifactId>
-      <version>3.0</version>
+      <version>3.1</version>
  </dependency>
+<dependency>
+      <groupId>edu.emory.clir</groupId>
+      <artifactId>clearnlp-general-en-ner-gazetteer</artifactId>
+      <version>3.0</version>
+    </dependency>
  ```
 
 ## General Domain
@@ -71,12 +76,14 @@ The general models are trained on [OntoNotes 5.0](https://catalog.ldc.upenn.edu/
 * Download the following models and add them to your Java classpath.
  * Part-of-speech tagging: [clearnlp-general-en-pos-3.2.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-pos/3.2/clearnlp-general-en-pos-3.2.jar).
  * Dependency parsing: [clearnlp-general-en-dep-3.2.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-dep/3.2/clearnlp-general-en-dep-3.2.jar).
- * Named entity recognition: [clearnlp-general-en-ner-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-ner/3.0/clearnlp-general-en-ner-3.0.jar).
+ * Named entity recognition: [clearnlp-general-en-ner-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-ner/3.1/clearnlp-general-en-ner-3.1.jar).
+ * Named entity gazetteers: [clearnlp-general-en-ner-gazetteer-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-general-en-ner-gazetteer/3.0/clearnlp-general-en-ner-gazetteer-3.0.jar).
 
  ```
 export CLASSPATH=clearnlp-general-en-pos-3.2.jar:\\
-                     clearnlp-general-en-dep-3.2.jar:.
-                     clearnlp-general-en-ner-3.0.jar:.
+                     clearnlp-general-en-dep-3.2.jar:\\
+                     clearnlp-general-en-ner-3.1.jar:\\
+                     clearnlp-general-en-ner-gazetteer-3.0:\\
  ```                 		 
 
 #### With Maven
@@ -97,6 +104,11 @@ export CLASSPATH=clearnlp-general-en-pos-3.2.jar:\\
  <dependency>
       <groupId>edu.emory.clir</groupId>
       <artifactId>clearnlp-general-en-ner</artifactId>
+      <version>3.1</version>
+ </dependency>
+ <dependency>
+      <groupId>edu.emory.clir</groupId>
+      <artifactId>clearnlp-general-en-ner-gazetteer</artifactId>
       <version>3.0</version>
  </dependency>
  ```
