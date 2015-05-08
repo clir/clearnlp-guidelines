@@ -15,11 +15,11 @@ Dictionaries are required by several components in ClearNLP.  The general dictio
 #### Without Maven
 
 * Download the following models and add them to your Java classpath.
- * General dictionary: [clearnlp-dictionary-3.0.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.0/clearnlp-dictionary-3.0.jar).
+ * General dictionary: [clearnlp-dictionary-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-dictionary/3.1/clearnlp-dictionary-3.1.jar).
  * Global lexica: [clearnlp-global-lexica-3.1.jar](http://search.maven.org/remotecontent?filepath=edu/emory/clir/clearnlp-global-lexica/3.1/clearnlp-global-lexica-3.1.jar).
 
  ```
- export CLASSPATH=clearnlp-dictionary-3.0.jar:\\
+ export CLASSPATH=clearnlp-dictionary-3.1.jar:\\
                      clearnlp-global-lexica-3.1.jar:.
  ```
 
@@ -31,7 +31,7 @@ Dictionaries are required by several components in ClearNLP.  The general dictio
  <dependency>
       <groupId>edu.emory.clir</groupId>
       <artifactId>clearnlp-dictionary</artifactId>
-      <version>3.0</version>
+      <version>3.1</version>
  </dependency>
  <dependency>
       <groupId>edu.emory.clir</groupId>
