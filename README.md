@@ -2,7 +2,7 @@
 
 The [ClearNLP](https://github.com/clir/clearnlp) project provides software and resources for natural language processing.  The project is currently developed by the [Center for Language and Information Research](http://nlp.mathcs.emory.edu) at [Emory University](http://emory.edu).
 
-* The latest version: [3.1.1](http://search.maven.org/#artifactdetails%7Cedu.emory.clir%7Cclearnlp%7C3.1.1%7Cjar) ([release notes](md/release/release_notes.md)).
+* The latest version: [3.1.2](http://search.maven.org/#artifactdetails%7Cedu.emory.clir%7Cclearnlp%7C3.1.2%7Cjar) ([release notes](md/release/release_notes.md)).
 * Contact: [google group](https://groups.google.com/forum/?fromgroups#!forum/clearnlp), [support@clearnlp.com](support@clearnlp.com).
 
 ## Quick Start
