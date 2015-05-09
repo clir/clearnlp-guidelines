@@ -1,5 +1,9 @@
 # Release Notes
 
+## Version 3.1.2 (5/8/2015)
+
+* Fixed bugs related to the [issue #3](https://github.com/clir/clearnlp/issues/3) (no statistical models are updated).
+
 ## Version 3.1.1 (5/7/2015)
 
 * Word embedding lexicons are removed from the global lexica, which didn't add much accuracy but took so much RAM space.  Furthermore, the gazetteers for named entity recognition are now separated from the global lexica for better modulation (see [models](../quick_start/models.md) for more details).
