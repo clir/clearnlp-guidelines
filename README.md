@@ -2,7 +2,7 @@
 
 The [ClearNLP](https://github.com/clir/clearnlp) project provides software and resources for natural language processing.  The project is currently developed by the [Center for Language and Information Research](http://nlp.mathcs.emory.edu) at [Emory University](http://emory.edu).
 
-* The latest version: [3.1.2](http://search.maven.org/#artifactdetails%7Cedu.emory.clir%7Cclearnlp%7C3.1.2%7Cjar) ([release notes](md/release/release_notes.md)).
+* The latest version: [3.2.0](http://search.maven.org/#artifactdetails%7Cedu.emory.clir%7Cclearnlp%7C3.2.0%7Cjar) ([release notes](md/release/release_notes.md)).
 * Contact: [google group](https://groups.google.com/forum/?fromgroups#!forum/clearnlp), [support@clearnlp.com](support@clearnlp.com).
 
 ## Quick Start
@@ -20,13 +20,14 @@ The [ClearNLP](https://github.com/clir/clearnlp) project provides software and r
 * [Part-of-speech tagging](md/components/pos_tagging.md).
 * [Morphological analysis](md/components/morphological_analysis.md).
 * [Dependency parsing](md/components/dependency_parsing.md).
+* [Semantic role labeling](md/components/semantic_role_labeling.md).
 * [Named entity recognization](md/components/named_entity_recognition.md).
-* Semantic role labeling (coming in May, 2015).
 * Coreference resolution (coming in Nov, 2015).
 
 ## Specifications
 
-* [ClearNLP dependency labels](md/dependency/dependency_guidelines.md).
+* [ClearNLP dependency labels](md/specifications/dependency_labels.md).
+* [ClearNLP semantic role labels](md/specifications/semantic_role_labels.md).
 * [ClearNLP javadoc](http://nlp.mathcs.emory.edu/clearnlp/javadoc/).
 * [Feature template](md/formats/feature_template.md).
 * [Headrule format](md/formats/headrule_format.md).

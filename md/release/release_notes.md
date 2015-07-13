@@ -1,5 +1,14 @@
 # Release Notes
 
+## Version 3.2.0 (7/13/2015)
+
+* The semantic role labeler is added.  See [models](../quick_start/models.md) and [decoding](https://github.com/clir/clearnlp-guidelines/blob/master/md/quick_start/decode.md) for details about how to add the SRL model and perform semantic role labeling.  From this version, we start using a slightly modified version of semantic role label set, which merges some numbered argument labels with their equivalent modifier tags (see [semantic role labels](../specifications/semantic_role_labels.md) for more details).
+* The dictionary is updated to 3.2, which now includes derivation rules for English (see [models](../quick_start/models.md)).
+ 
+## Version 3.1.2 (5/31/2015)
+
+* NLPDecode has multi-threads supported.
+
 ## Version 3.1.2 (5/8/2015)
 
 * Fixed bugs related to the [issue #3](https://github.com/clir/clearnlp/issues/3) (no statistical models are updated).

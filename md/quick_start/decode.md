@@ -2,12 +2,12 @@
 
 ## Command-Line
 
-The following shows the command to run the NLP pipeline for part-of-speech tagging, morphological analysis, dependency parsing, named entity recognition, or semantic role labeling: `pos`, `morph`, `dep`, `ner`, `srl`.
+The following shows the command to run the NLP pipeline for part-of-speech tagging, morphological analysis, dependency parsing,  semantic role labeling and named entity recognition, : `pos`, `morph`, `dep`, `srl`, `ner`.
 
 ```
 java edu.emory.clir.clearnlp.bin.NLPDecode -mode <mode> -c <filename> -i <filepath> [-ie <string> -oe <string>]
 
--mode <mode>  : pos|morph|dep|ner|srl
+-mode <mode>  : pos|morph|dep|srl|ner
 -c <filename> : configuration file (required)
 -i <filepath> : input path (required)
 -ie <string>  : input file extension (default: *)
@@ -31,6 +31,7 @@ sample.txt
 ```
 
 * Make sure to use the [`-XX:+UseConcMarkSweepGC`](http://www.oracle.com/technetwork/java/tuning-139912.html) option for JVM, which reduces the memory usage into a half.
+* If you want to run the sematic role labeling pipeline, use [config\_decode_srl.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_decode_srl.xml) instead.
 * If you want to run the named entity recognition pipeline, use [config\_decode_ner.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_decode_ner.xml) instead, which takes about 9GB of RAM.
 * Add the log4j configuration file ([log4j.properties](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/log4j.properties)) to your classpath.
 * Use our [visualization tool](http://nlp.mathcs.emory.edu/clearnlp/demo/demo.html) to view the output.
