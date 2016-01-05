@@ -22,7 +22,7 @@ java edu.emory.clir.clearnlp.bin.NLPDecode -mode <mode> -c <filename> -i <filepa
 The following command takes the input file ([clearnlp.txt](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt)) and the configuration file ([config\_decode_dep.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_decode_dep.xml)), performs the NLP pipeline for dependency parsing (`dep`), and generates the output file ([clearnlp.txt.cnlp](https://github.com/clir/clearnlp/blob/master/src/main/resources/samples/clearnlp.txt.cnlp)).
 
 ```
-$ java -Xmx5g -XX:+UseConcMarkSweepGC java edu.emory.clir.clearnlp.bin.NLPDecode -mode dep -c config_decode_dep.xml -i sample-raw.txt
+$ java -Xmx5g -XX:+UseConcMarkSweepGC edu.emory.clir.clearnlp.bin.NLPDecode -mode dep -c config_decode_dep.xml -i sample-raw.txt
 Loading distributional semantics.
 Loading dependency parsing models.
 Loading part-of-speech tagging models.
