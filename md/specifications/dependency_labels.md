@@ -57,7 +57,7 @@
 |:------------- |:----------------------------------|:-----:|:------|
 | COMPLM        | Complementizer                    | 3.0.0 | Replaced to `mark`     |
 | INFMOD        | Infinitival modifier              | 3.0.0 | Replaced to `acl`      |
-| PARTMOD       | Participal modifier               | 3.0.0 | Replaced to `acl`      |
+| PARTMOD       | Participle modifier               | 3.0.0 | Replaced to `acl`      |
 | HMOD          | Modifier in hyphenation           | 3.1.0 | Replaced to `compound` |
 | HYPH          | Hyphen                            | 3.1.0 | Replaced to `punct` |
 | IOBJ          | Indirect object                   | 3.1.0 | Replaced to `dative`   |
@@ -138,7 +138,7 @@ An appositional modifier (`appos`) of an `NML|NP` is a noun phrase immediately p
 
 A finite or non-finite clausal modifier (`acl`) is either an infinitival modifier is an infinitive clause or phrase that modifies the head of a noun phrase, or a participial modifier is a clause or phrase whose head is a verb in a participial form (e.g., gerund, past participle) that modifies the head of a noun phrase, or a complement.
 
-### Releative clause modifier
+### Relative clause modifier
 
 A relative clause modifier (`relcl`) is a either relative clause or a reduced relative clause that modifies the head of an `NML|NP|WHNP`.
 
@@ -222,11 +222,11 @@ An auxiliary (`aux`) is an auxiliary or modal verb that gives further informatio
 
 A passive auxiliary (`auxpass`) is an auxiliary verb, be, become, or get, that modifies a passive verb.
 
-## Compund words
+## Compound words
 
 ### Compound
 
-A compound (`compound`) is either a noun modifying the head of noun phrase, a number modifying the head of quantifier phrase, or a hyphenated word (or a preposition modifying the head of the prepositioanl phrase).
+A compound (`compound`) is either a noun modifying the head of noun phrase, a number modifying the head of quantifier phrase, or a hyphenated word (or a preposition modifying the head of the prepositional phrase).
 
 ### Particle
 
@@ -252,7 +252,7 @@ A meta modifier (`meta`) is code (1), embedded (2), or meta (3) information that
 
 ### Parenthetical modifier
 
-A parenthetical modifier (`parataxis`) is an embedded chunk, often but not necessarily surrounded by parentheticalnotations (e.g,. brackets, quotes, commas, etc.), which gives side information to its head.
+A parenthetical modifier (`parataxis`) is an embedded chunk, often but not necessarily surrounded by parentheticalnotations (e.g., brackets, quotes, commas, etc.), which gives side information to its head.
 
 ### Punctuation
 
