@@ -248,7 +248,7 @@ An unclassified dependent (`dep`) is a dependent that does not satisfy condition
 
 ### Meta modifier
 
-A meta modifier (`meta`) is code (1), embedded (2), or meta (3) information that is randomly inserted in a phrase￼￼￼or clause.
+A meta modifier (`meta`) is code (1), embedded (2), or meta (3) information that is randomly inserted in a phraseor clause.
 
 ### Parenthetical modifier
 
