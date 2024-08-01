@@ -206,7 +206,7 @@ A coordinating conjunction (`cc`) is a dependent of the leftmost conjunct in coo
 
 ### Pre-correlative conjunction
 
-A pre-correlative conjunction (`preconj`) is the first part of a correlative conjunction that becomes a dependent of thefirst conjunct in coordination.
+A pre-correlative conjunction (`preconj`) is the first part of a correlative conjunction that becomes a dependent of the first conjunct in coordination.
 
 ### Prepositional modifier
 
@@ -248,11 +248,11 @@ An unclassified dependent (`dep`) is a dependent that does not satisfy condition
 
 ### Meta modifier
 
-A meta modifier (`meta`) is code (1), embedded (2), or meta (3) information that is randomly inserted in a phraseor clause.
+A meta modifier (`meta`) is code (1), embedded (2), or meta (3) information that is randomly inserted in a phrase or clause.
 
 ### Parenthetical modifier
 
-A parenthetical modifier (`parataxis`) is an embedded chunk, often but not necessarily surrounded by parentheticalnotations (e.g., brackets, quotes, commas, etc.), which gives side information to its head.
+A parenthetical modifier (`parataxis`) is an embedded chunk, often but not necessarily surrounded by parenthetical notations (e.g., brackets, quotes, commas, etc.), which gives side information to its head.
 
 ### Punctuation
 
