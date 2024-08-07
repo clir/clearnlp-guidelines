@@ -34,7 +34,7 @@ sample.txt
 * If you want to run the sematic role labeling pipeline, use [config\_decode_srl.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_decode_srl.xml) instead.
 * If you want to run the named entity recognition pipeline, use [config\_decode_ner.xml](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/config_decode_ner.xml) instead, which takes about 9GB of RAM.
 * Add the log4j configuration file ([log4j.properties](https://github.com/clir/clearnlp/blob/master/src/main/resources/configure/log4j.properties)) to your classpath.
-* Use our [visualization tool](http://nlp.mathcs.emory.edu/clearnlp/demo/demo.html) to view the output.
+* Use our [visualization tool](http://www.mathcs.emory.edu/~choi/clearnlp/demo/demo.html) to view the output.
 
 ## Configuration
 

@@ -108,7 +108,7 @@ A dative (`dative`) is a nominal or prepositional object of dative-shifting verb
 
 ### Attribute
 
-An attribute (`attr`) is a noun phrase that is a non-VP predicate usually following a copula verb.
+An attribute (`attr`) is a noun phrase that is a non-VP (verb phrase) predicate usually following a copula verb.
 
 ### Object predicate
 
