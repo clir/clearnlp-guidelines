@@ -10,7 +10,7 @@ Our constituent-to-dependency converter takes the [Penn Treebank](http://www.cis
 
 Our dependency conversion has been tested on various Treebanks and shown robust results across different corpora. See the following documents for more details.
 
-* [ClearNLP dependency labels](../dependency/dependency_guidelines.md): latest version.
+* [ClearNLP dependency labels](../specifications/dependency_labels.md): latest version.
 * [Guidelines for the CLEAR Style Constituent to Dependency Conversion](http://www.mathcs.emory.edu/~choi/doc/clear-dependency-2012.pdf), Jinho D. Choi, Martha Palmer, Technical report 01-12: Institute of Cognitive Science, University of Colorado Boulder, 2012.
 
 ## Decoding
